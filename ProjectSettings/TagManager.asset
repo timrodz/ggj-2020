@@ -41,3 +41,33 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Casket_Lid
+    uniqueID: 4115682841
+    locked: 0
+  - name: Hair
+    uniqueID: 3271355609
+    locked: 0
+  - name: Eyes
+    uniqueID: 505314709
+    locked: 0
+  - name: Nose
+    uniqueID: 3393550397
+    locked: 0
+  - name: Mouth
+    uniqueID: 1965413509
+    locked: 0
+  - name: Ears
+    uniqueID: 1093581205
+    locked: 0
+  - name: Head
+    uniqueID: 3507351283
+    locked: 0
+  - name: Body
+    uniqueID: 3727756723
+    locked: 0
+  - name: Mourners
+    uniqueID: 1598743737
+    locked: 0
+  - name: Ground
+    uniqueID: 2486107295
+    locked: 0

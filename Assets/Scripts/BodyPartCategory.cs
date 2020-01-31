@@ -3,7 +3,10 @@
 [System.Serializable]
 public enum BodyPartCategory
 {
-    Boring,
-    Beverage,
+    Dreadlocks,
+    Spiky,
+    Afro,
+    Beehive,
+    Mullet,
     Whacky,
 }
