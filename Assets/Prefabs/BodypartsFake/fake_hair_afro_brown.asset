@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df4ea5127701a473daad4f423772f99c, type: 3}
+  m_Script: {fileID: 11500000, guid: a667739756ab34afba411354e4f4eae2, type: 3}
   m_Name: fake_hair_afro_brown
   m_EditorClassIdentifier: 
   IsReal: 0
@@ -17,4 +17,4 @@ MonoBehaviour:
   Category: 2
   Colour: 6
   Sprite: {fileID: 6475074188812180693, guid: 3ced52f0a54a53640b6d26148ee436f3, type: 3}
-  Offset: {x: 0.12, y: 1.05, z: 0}
+  Offset: {x: 0.12, y: 1.34, z: 0}

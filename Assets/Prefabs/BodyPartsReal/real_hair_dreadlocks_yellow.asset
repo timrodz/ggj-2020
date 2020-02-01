@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df4ea5127701a473daad4f423772f99c, type: 3}
+  m_Script: {fileID: 11500000, guid: a667739756ab34afba411354e4f4eae2, type: 3}
   m_Name: real_hair_dreadlocks_yellow
   m_EditorClassIdentifier: 
   IsReal: 1
@@ -17,3 +17,4 @@ MonoBehaviour:
   Category: 0
   Colour: 0
   Sprite: {fileID: 0}
+  Offset: {x: 0, y: 0, z: 0}

@@ -56,19 +56,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4ac7b2f7f8a72274b8f3ba90843fb79b, type: 2}
   FakeBodyPartList:
   - {fileID: 11400000, guid: 761098d1df6ca45468e7ea14f16649e5, type: 2}
-  - {fileID: 11400000, guid: 7f5a842913e6b498e9d82f04f6bd3d79, type: 2}
-  - {fileID: 11400000, guid: 973f20de0eb921e4587758c5a623e895, type: 2}
-  - {fileID: 11400000, guid: 07184f840e1a1c6459a2a540a2ab76e8, type: 2}
+  - {fileID: 11400000, guid: 7955d2603f0fc46349646010add5a879, type: 2}
+  - {fileID: 11400000, guid: 874339c8963be4e16bca5f7c45553028, type: 2}
+  - {fileID: 11400000, guid: 9c2c4251c04ff4270b84ada5a8eb4991, type: 2}
   - {fileID: 11400000, guid: cf6ea035229014bda8954e34d329d2c0, type: 2}
   - {fileID: 11400000, guid: 52b58ccaff4424d9689d6c51c8617cc2, type: 2}
-  - {fileID: 11400000, guid: fd307ba21fd39df4ea67a3aec21667e1, type: 2}
-  - {fileID: 11400000, guid: 5d01a82477eba23408e2e659fdeff528, type: 2}
-  - {fileID: 11400000, guid: b6daf1f800b844bc98959d70cd5eca32, type: 2}
-  - {fileID: 11400000, guid: 7e48ac3b75a404baaaa3acd4f1282db6, type: 2}
+  - {fileID: 11400000, guid: 77d29a635d7fb4448933b1f0131599da, type: 2}
+  - {fileID: 11400000, guid: 8d553959ba4474cf893421eea9829fab, type: 2}
+  - {fileID: 11400000, guid: 440f5b46fea84446fa0f0c2f1a5677a0, type: 2}
+  - {fileID: 11400000, guid: 4105931a1921040a0a8c846c32dc0d9f, type: 2}
   TrayPartList: []
   CurrentSolution:
-    RealPart: {fileID: 0}
-    FakePart: {fileID: 0}
-  PreviousSolution:
-    RealPart: {fileID: 0}
-    FakePart: {fileID: 0}
+    RealItem: {fileID: 0}
+    FakeItem: {fileID: 0}
