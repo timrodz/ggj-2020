@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class CycleBody : MonoBehaviour {
-	public static System.Action<int> OnClick;
+    public static System.Action<int> OnClick;
     public static System.Action OnCarryOutStart;
     public static System.Action OnCarryOutFinish;
 
-	public GameObject tray;
+    public GameObject tray;
     public GameObject portrait;
     public GameObject curtains;
     public GameObject coffinRotation;
@@ -42,53 +42,58 @@ public class CycleBody : MonoBehaviour {
 
     //Use this to assign the chosen part to the corpse
 
-    public void LetsTest (string buttonNumber) {
-        Debug.Log (buttonNumber);
+    private void Start() {
 		SetButtonsInteractable(false);
-		StartCoroutine (CarryOutBodySwap ());
-    }
+		StartCoroutine(CarryBodySwapIn());
+	}
     
-    private void SetButtonsInteractable(bool value) {
+    IEnumerator CarryBodySwapIn() {
+        yield return new WaitForSeconds (1.5f);
+		SetButtonsInteractable(true);
+        OnCarryOutFinish?.Invoke ();
+	}
+
+    private void SetButtonsInteractable (bool value) {
         button1.interactable = value;
         button2.interactable = value;
         button3.interactable = value;
         button4.interactable = value;
     }
-    
-    public void SelectBodyPart(int buttonNumber) {
-        Debug.LogFormat("Selected body part: {0}", buttonNumber);
-		SetButtonsInteractable(false);
-		OnClick?.Invoke(buttonNumber);
-	}
 
-    IEnumerator CarryOutBodySwap () {
-		OnCarryOutStart?.Invoke();
+    public void SelectBodyPart (int buttonNumber) {
+        Debug.LogFormat ("Selected body part: {0}", buttonNumber);
+        SetButtonsInteractable (false);
+        OnClick?.Invoke (buttonNumber);
+        StartCoroutine (CarryOutBodySwapOut ());
+    }
 
-		// TODO: Play animation
+    IEnumerator CarryOutBodySwapOut () {
+        OnCarryOutStart?.Invoke ();
 
-		//yield return new WaitForSeconds (1f);
+        // TODO: Play animation
 
-        tray.gameObject.GetComponent<Animator> ().SetTrigger ("Hide");
-        portrait.gameObject.GetComponent<Animator> ().SetTrigger ("Hide");
-        curtains.gameObject.GetComponent<Animator> ().SetTrigger ("Open");
-        coffinRotation.gameObject.GetComponent<Animator>().SetTrigger("Empty Table");
+        //yield return new WaitForSeconds (1f);
 
+        tray.gameObject.GetComponent<Animator> ()?.SetTrigger ("Hide");
+        portrait.gameObject.GetComponent<Animator> ()?.SetTrigger ("Hide");
+        // curtains.gameObject.GetComponent<Animator> ()?.SetTrigger ("Open");
+        coffinRotation.gameObject.GetComponent<Animator> ()?.SetTrigger ("Empty Table");
 
         yield return new WaitForSeconds (1.5f);
 
         //Replace the animated coffin with the closed coffin
         //closedCoffin.SetActive (true);
 
-        tray.gameObject.GetComponent<Animator> ().SetTrigger ("Show");
-        portrait.gameObject.GetComponent<Animator> ().SetTrigger ("Show");
-        curtains.gameObject.GetComponent<Animator> ().SetTrigger ("Close");
-        coffinRotation.gameObject.GetComponent<Animator>().SetTrigger("Next Coffin");
+        tray.gameObject.GetComponent<Animator> ()?.SetTrigger ("Show");
+        portrait.gameObject.GetComponent<Animator> ()?.SetTrigger ("Show");
+        // curtains.gameObject.GetComponent<Animator> ()?.SetTrigger ("Close");
+        coffinRotation.gameObject.GetComponent<Animator> ()?.SetTrigger ("Next Coffin");
 
         yield return new WaitForSeconds (1.0f);
 
-		SetButtonsInteractable(true);
+        SetButtonsInteractable (true);
 
-		OnCarryOutFinish?.Invoke();
+        OnCarryOutFinish?.Invoke ();
     }
 
 }

@@ -18,7 +18,7 @@ public class BodyPartItemObject : MonoBehaviour {
 		var sr = GetComponent<SpriteRenderer> ();
 		sr.sprite = item.Sprite;
 		sr.color = item.Colour == BodyPartColour.Yellow ? Color.yellow : brown;
-		transform.position = transform.position;
+		transform.position = item.Offset;
 	}
 
 	public void InitImage (BodyPartItem item) {
