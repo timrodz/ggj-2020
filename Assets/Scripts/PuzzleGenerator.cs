@@ -27,7 +27,6 @@ public class PuzzleGenerator : MonoBehaviour {
     [Header ("Tray Part Array")]
     public List<BodyPartItem> TrayPartList = new List<BodyPartItem> ();
     public Solution CurrentSolution = null;
-    public Solution PreviousSolution = null;
 
     private Dictionary<string, int> SolutionDict = new Dictionary<string, int> ();
 
@@ -51,21 +50,17 @@ public class PuzzleGenerator : MonoBehaviour {
     public void ClearState () {
         Debug.Log ("Clearing state");
         CurrentSolution = null;
-        PreviousSolution = null;
         TrayPartList.Clear ();
         SolutionDict.Clear ();
     }
 
-    public Solution GetSolution (BodyPartType type) {
+    public Solution GenerateSolution (BodyPartType type) {
         // Pick a random real body part
-        BodyPartItem realPart = GetRandomBodyPart (RealBodyPartList, type, PreviousSolution != null ? PreviousSolution.RealItem : null);
+        BodyPartItem realPart = GetRandomBodyPart (RealBodyPartList, type, CurrentSolution != null ? CurrentSolution.RealItem : null);
 
         // Match a fake body part with it
         BodyPartItem fakePart = FakeBodyPartList.Find ((item) => item.Colour == realPart.Colour && item.Type == realPart.Type && item.Category == realPart.Category);
 
-        if (PreviousSolution != null) {
-            PreviousSolution = CurrentSolution;
-        }
         RegisterSolution (realPart.name);
         CurrentSolution = new Solution (realPart, fakePart);
 
@@ -75,7 +70,7 @@ public class PuzzleGenerator : MonoBehaviour {
 
     public void FillTray (BodyPartType type) {
         TrayPartList.Clear ();
-        Solution sol = GetSolution (type);
+        Solution sol = GenerateSolution (type);
 
         if (!sol.FakeItem) {
             Debug.LogError ("Could not find fake part: " + sol.ToString ());
@@ -146,7 +141,7 @@ public class PuzzleGenerator : MonoBehaviour {
 
     [ContextMenu ("Run: Get Solution")]
     public void TestGetSolution () {
-        GetSolution (BodyPartType.Hair);
+        GenerateSolution (BodyPartType.Hair);
     }
 
     [ContextMenu ("Run: Fill Tray")]
