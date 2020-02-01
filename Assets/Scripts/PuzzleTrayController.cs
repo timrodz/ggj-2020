@@ -2,6 +2,8 @@
 using UnityEngine;
 
 public class PuzzleTrayController : MonoBehaviour {
+    public static System.Action<int> OnScoreCalculated;
+    
     [SerializeField]
     private PuzzleGenerator Puzzle = null;
     
@@ -15,13 +17,22 @@ public class PuzzleTrayController : MonoBehaviour {
     [SerializeField]
 	private BodyPartItemObject CorpseObject;
     
-    private void Awake() {
+    private void OnEnable() {
 		CycleBody.OnClick += OnBodyPartSelected;
 		CycleBody.OnCarryOutFinish += OnReset;
 	}
     
+    private void OnDisable() {
+		CycleBody.OnClick -= OnBodyPartSelected;
+		CycleBody.OnCarryOutFinish -= OnReset;
+	}
+    
     private void OnBodyPartSelected(int buttonNumber) {
-		CorpseObject.InitSprite(TrayGameObjectList[buttonNumber].Item);
+		var fakeItem = TrayGameObjectList[buttonNumber].Item;
+		CorpseObject.InitSprite(fakeItem);
+		int score = new ScoreCalculator().CalculateScore(ObjectToMatch.Item, fakeItem);
+		Debug.LogFormat("Score: {0}", score);
+		OnScoreCalculated?.Invoke(score);
 	}
     
     private void OnReset() {
