@@ -18,16 +18,14 @@ public class BodyPartItemObject : MonoBehaviour {
 		var sr = GetComponent<SpriteRenderer> ();
 		sr.sprite = item.Sprite;
 		sr.color = item.Colour == BodyPartColour.Yellow ? Color.yellow : brown;
-		transform.position = item.Offset;
+		transform.localPosition = item.Offset;
+		Debug.LogFormat("Position: {0}, offset: {1}", transform.localPosition, item.Offset);
 	}
 
 	public void InitImage (BodyPartItem item) {
 		Item = item;
 		var im = GetComponent<Image> ();
-		im.enabled = false;
 		im.sprite = item.Sprite;
 		im.color = item.Colour == BodyPartColour.Yellow ? Color.yellow : brown;
-		im.enabled = true;
-		transform.position = transform.position;
 	}
 }

@@ -41,7 +41,14 @@ public class CycleBody : MonoBehaviour {
     //show the tray
 
     //Use this to assign the chosen part to the corpse
-
+    private void OnEnable() {
+		PuzzleTrayController.OnScoreCalculated += OnScore;
+	}
+    
+    private void OnScore(int score) {
+        StartCoroutine (CarryOutBodySwapOut ());
+    }
+    
     private void Start() {
 		SetButtonsInteractable(false);
 		StartCoroutine(CarryBodySwapIn());
@@ -64,15 +71,14 @@ public class CycleBody : MonoBehaviour {
         Debug.LogFormat ("Selected body part: {0}", buttonNumber);
         SetButtonsInteractable (false);
         OnClick?.Invoke (buttonNumber);
-        StartCoroutine (CarryOutBodySwapOut ());
     }
 
     IEnumerator CarryOutBodySwapOut () {
         OnCarryOutStart?.Invoke ();
 
-        // TODO: Play animation
+        // TODO: Play score animation
 
-        //yield return new WaitForSeconds (1f);
+        yield return new WaitForSeconds (1f);
 
         tray.gameObject.GetComponent<Animator> ()?.SetTrigger ("Hide");
         portrait.gameObject.GetComponent<Animator> ()?.SetTrigger ("Hide");
