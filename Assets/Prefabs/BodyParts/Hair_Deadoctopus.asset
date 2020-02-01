@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Category: 4
-  Colour: 4
+  Colour: 6
   Sprite: {fileID: 0}
   Position: {x: 0, y: 0}
   Rotation: {x: 0, y: 0}

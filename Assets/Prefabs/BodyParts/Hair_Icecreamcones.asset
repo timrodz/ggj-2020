@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df4ea5127701a473daad4f423772f99c, type: 3}
-  m_Name: Hair_Broccoli
+  m_Name: Hair_Icecreamcones
   m_EditorClassIdentifier: 
   Type: 0
-  Category: 2
-  Colour: 2
+  Category: 1
+  Colour: 6
   Sprite: {fileID: 0}
   Position: {x: 0, y: 0}
   Rotation: {x: 0, y: 0}
