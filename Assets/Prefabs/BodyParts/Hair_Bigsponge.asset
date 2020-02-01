@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df4ea5127701a473daad4f423772f99c, type: 3}
-  m_Name: Hair_Carrots
+  m_Name: Hair_Bigsponge
   m_EditorClassIdentifier: 
   Type: 0
-  Category: 1
-  Colour: 3
+  Category: 2
+  Colour: 0
   Sprite: {fileID: 0}
   Position: {x: 0, y: 0}
   Rotation: {x: 0, y: 0}
