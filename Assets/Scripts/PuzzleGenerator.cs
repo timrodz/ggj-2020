@@ -4,16 +4,16 @@ using UnityEngine;
 
 [System.Serializable]
 public class Solution {
-    public BodyPartItem RealPart;
-    public BodyPartItem FakePart;
+    public BodyPartItem RealItem;
+    public BodyPartItem FakeItem;
 
-    public Solution (BodyPartItem real, BodyPartItem fake) {
-        RealPart = real;
-        FakePart = fake;
+    public Solution (BodyPartItem realItem, BodyPartItem fakeItem) {
+        RealItem = realItem;
+        FakeItem = fakeItem;
     }
 
     public override string ToString () {
-        return string.Format ("Real Part {0} - Fake Part: {1}", RealPart.name, FakePart.name);
+        return string.Format ("Real Part {0} - Fake Part: {1}", RealItem.name, FakeItem.name);
     }
 }
 
@@ -56,66 +56,68 @@ public class PuzzleGenerator : MonoBehaviour {
         SolutionDict.Clear ();
     }
 
-    public Solution GetSolution (BodyPartType type = BodyPartType.Hair) {
+    public Solution GetSolution (BodyPartType type) {
         // Pick a random real body part
-        BodyPartItem realPart = GetRandomBodyPart (RealBodyPartList, type, PreviousSolution.RealPart != null ? PreviousSolution.RealPart : null);
+        BodyPartItem realPart = GetRandomBodyPart (RealBodyPartList, type, PreviousSolution != null ? PreviousSolution.RealItem : null);
 
         // Match a fake body part with it
         BodyPartItem fakePart = FakeBodyPartList.Find ((item) => item.Colour == realPart.Colour && item.Type == realPart.Type && item.Category == realPart.Category);
 
+        if (PreviousSolution != null) {
+            PreviousSolution = CurrentSolution;
+        }
         RegisterSolution (realPart.name);
         CurrentSolution = new Solution (realPart, fakePart);
-        PreviousSolution = CurrentSolution;
 
         Debug.LogFormat ("New Solution: " + CurrentSolution.ToString ());
         return CurrentSolution;
     }
 
-    public void FillTray (BodyPartType type = BodyPartType.Hair) {
+    public void FillTray (BodyPartType type) {
         TrayPartList.Clear ();
         Solution sol = GetSolution (type);
 
-        if (!sol.FakePart) {
+        if (!sol.FakeItem) {
             Debug.LogError ("Could not find fake part: " + sol.ToString ());
             return;
         }
 
-        BodyPartItem solutionFakePart = sol.FakePart;
+        BodyPartItem solutionFakeItem = sol.FakeItem;
 
-        TrayPartList.Add (solutionFakePart);
+        TrayPartList.Add (solutionFakeItem);
 
         var tempFakePartList = new List<BodyPartItem> (FakeBodyPartList);
 
         // Remove solution fake part
-        tempFakePartList.Remove (solutionFakePart);
+        tempFakePartList.Remove (solutionFakeItem);
 
         // Equal Type + Category
-        var equalTypeCategory = tempFakePartList.FindAll ((item) => item.Type == solutionFakePart.Type && item.Category == solutionFakePart.Category && item.Colour != solutionFakePart.Colour);
+        var equalTypeCategory = tempFakePartList.FindAll ((item) => item.Type == solutionFakeItem.Type && item.Category == solutionFakeItem.Category && item.Colour != solutionFakeItem.Colour);
 
-        BodyPartItem newPart = equalTypeCategory[Random.Range (0, equalTypeCategory.Count)];
-        tempFakePartList.Remove (newPart);
-        TrayPartList.Add (newPart);
-        Debug.Log ("Equal Type + Category: " + newPart.ToString ());
+        BodyPartItem newItem = equalTypeCategory[Random.Range (0, equalTypeCategory.Count)];
+        tempFakePartList.Remove (newItem);
+        TrayPartList.Add (newItem);
+        Debug.Log ("Equal Type + Category: " + newItem.ToString ());
 
         // Equal Type + Colour
-        var equalTypeColour = tempFakePartList.FindAll ((item) => item.Type == solutionFakePart.Type && item.Colour == solutionFakePart.Colour && item.Category != solutionFakePart.Category);
+        var equalTypeColour = tempFakePartList.FindAll ((item) => item.Type == solutionFakeItem.Type && item.Colour == solutionFakeItem.Colour && item.Category != solutionFakeItem.Category);
 
-        newPart = equalTypeColour[Random.Range (0, equalTypeColour.Count)];
-        tempFakePartList.Remove (newPart);
-        TrayPartList.Add (newPart);
-        Debug.Log ("Equal Type + Colour: " + newPart.ToString ());
+        newItem = equalTypeColour[Random.Range (0, equalTypeColour.Count)];
+        tempFakePartList.Remove (newItem);
+        TrayPartList.Add (newItem);
+        Debug.Log ("Equal Type + Colour: " + newItem.ToString ());
 
         // Equal Type (Not equal color + category)
-        var equalType = tempFakePartList.FindAll ((item) => item.Type == solutionFakePart.Type && item.Category != solutionFakePart.Category && item.Colour != solutionFakePart.Colour);
+        var equalType = tempFakePartList.FindAll ((item) => item.Type == solutionFakeItem.Type && item.Category != solutionFakeItem.Category && item.Colour != solutionFakeItem.Colour);
 
-        newPart = equalType[Random.Range (0, equalType.Count)];
-        tempFakePartList.Remove (newPart);
-        TrayPartList.Add (newPart);
-        Debug.Log ("Equal Type: " + newPart.ToString ());
+        newItem = equalType[Random.Range (0, equalType.Count)];
+        tempFakePartList.Remove (newItem);
+        TrayPartList.Add (newItem);
+        Debug.Log ("Equal Type: " + newItem.ToString ());
 
         TrayPartList.Shuffle ();
         foreach (BodyPartItem item in TrayPartList) {
-            Debug.Log (item.name == solutionFakePart.name ? "(solution) " + item.ToString () : item.ToString ());
+            Debug.Log (item.name == solutionFakeItem.name ? "(solution) " + item.ToString () : item.ToString ());
         }
     }
 

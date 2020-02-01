@@ -12,8 +12,9 @@ public class BodyPartItem : ScriptableObject {
     public BodyPartColour Colour = BodyPartColour.Brown;
     [Header("What sprite is tied to this object?")]
     public Sprite Sprite = null;
-    
-    public override string ToString() {
+	public Vector3 Offset = Vector3.zero;
+
+	public override string ToString() {
 		return string.Format("BodyPartItem {0} = Type: {1} - Category: {2}, Colour: {3}", name, Type, Category, Colour);
 	}
 }
