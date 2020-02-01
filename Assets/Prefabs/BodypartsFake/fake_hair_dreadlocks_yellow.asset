@@ -17,3 +17,4 @@ MonoBehaviour:
   Category: 0
   Colour: 0
   Sprite: {fileID: 1481376409368658864, guid: 3ced52f0a54a53640b6d26148ee436f3, type: 3}
+  Offset: {x: -0.71, y: 0.69, z: 0}

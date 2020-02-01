@@ -14,6 +14,6 @@ public class BodyPartItemObject : MonoBehaviour {
     public void Init (BodyPartItem item) {
         Item = item;
 		SpriteRenderer.sprite = item.Sprite;
-		transform.position = transform.position + item.Offset;
+		transform.position = transform.position;
 	}
 }
