@@ -55,7 +55,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: df01a9b77ff8f3e4fb2fd8972769ab61, type: 2}
   - {fileID: 11400000, guid: 4ac7b2f7f8a72274b8f3ba90843fb79b, type: 2}
   FakeBodyPartList:
-  - {fileID: 11400000, guid: 761098d1df6ca45468e7ea14f16649e5, type: 2}
+  - {fileID: 11400000, guid: 163737564737f216e696d6164796f6e6, type: 2}
   - {fileID: 11400000, guid: 7955d2603f0fc46349646010add5a879, type: 2}
   - {fileID: 11400000, guid: 874339c8963be4e16bca5f7c45553028, type: 2}
   - {fileID: 11400000, guid: 9c2c4251c04ff4270b84ada5a8eb4991, type: 2}

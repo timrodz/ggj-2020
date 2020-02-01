@@ -4,7 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class CycleBody : MonoBehaviour {
-    public GameObject tray;
+	public static System.Action<int> OnClick;
+    public static System.Action OnCarryOutStart;
+    public static System.Action OnCarryOutFinish;
+
+	public GameObject tray;
     public GameObject portrait;
     public GameObject curtains;
     public GameObject coffinRotation;
@@ -40,15 +44,29 @@ public class CycleBody : MonoBehaviour {
 
     public void LetsTest (string buttonNumber) {
         Debug.Log (buttonNumber);
-        button1.GetComponent<Button> ().interactable = false;
-        button2.GetComponent<Button> ().interactable = false;
-        button3.GetComponent<Button> ().interactable = false;
-        button4.GetComponent<Button> ().interactable = false;
-        StartCoroutine (CarryOutBodySwap ());
-
+		SetButtonsInteractable(false);
+		StartCoroutine (CarryOutBodySwap ());
     }
+    
+    private void SetButtonsInteractable(bool value) {
+        button1.interactable = value;
+        button2.interactable = value;
+        button3.interactable = value;
+        button4.interactable = value;
+    }
+    
+    public void SelectBodyPart(int buttonNumber) {
+        Debug.LogFormat("Selected body part: {0}", buttonNumber);
+		SetButtonsInteractable(false);
+		OnClick?.Invoke(buttonNumber);
+	}
 
     IEnumerator CarryOutBodySwap () {
+		OnCarryOutStart?.Invoke();
+
+		// TODO: Play animation
+
+		yield return new WaitForSeconds (1f);
 
         tray.gameObject.GetComponent<Animator> ().SetTrigger ("Hide");
         portrait.gameObject.GetComponent<Animator> ().SetTrigger ("Hide");
@@ -66,10 +84,9 @@ public class CycleBody : MonoBehaviour {
 
         yield return new WaitForSeconds (2.5f);
 
-        button1.GetComponent<Button> ().interactable = true;
-        button2.GetComponent<Button> ().interactable = true;
-        button3.GetComponent<Button> ().interactable = true;
-        button4.GetComponent<Button> ().interactable = true;
+		SetButtonsInteractable(true);
+
+		OnCarryOutFinish?.Invoke();
     }
 
 }
