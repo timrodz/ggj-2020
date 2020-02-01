@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Solution {
     public BodyPartItem RealPart;
     public BodyPartItem FakePart;
@@ -24,27 +25,40 @@ public class PuzzleGenerator : MonoBehaviour {
     private List<BodyPartItem> FakeBodyPartList = new List<BodyPartItem> ();
 
     [Header ("Tray Part Array")]
-    public List<BodyPartItem> TrayPartArray = new List<BodyPartItem> ();
+    public List<BodyPartItem> TrayPartList = new List<BodyPartItem> ();
     public Solution CurrentSolution = null;
     public Solution PreviousSolution = null;
 
     private Dictionary<string, int> SolutionDict = new Dictionary<string, int> ();
 
-    [ContextMenu ("Run: Reset State")]
-    public void ResetState () {
+    private void Start () {
+        ClearState ();
+    }
+
+    private void Update () {
+        if (Input.GetKeyDown (KeyCode.R)) {
+            ClearState ();
+        }
+        if (Input.GetKeyDown (KeyCode.Alpha1)) {
+            TestFillTray ();
+        }
+        if (Input.GetKeyDown (KeyCode.Alpha0)) {
+            TestGetSolution ();
+        }
+    }
+
+    [ContextMenu ("Run: Clear State")]
+    public void ClearState () {
         Debug.Log ("Clearing state");
+        CurrentSolution = null;
         PreviousSolution = null;
-        TrayPartArray.Clear ();
+        TrayPartList.Clear ();
         SolutionDict.Clear ();
     }
 
     public Solution GetSolution (BodyPartType type = BodyPartType.Hair) {
-        if (PreviousSolution != null) {
-            Debug.LogFormat ("Previous Solution: " + PreviousSolution.ToString ());
-        }
-
         // Pick a random real body part
-        BodyPartItem realPart = GetRandomBodyPart (RealBodyPartList, type, PreviousSolution != null ? PreviousSolution.RealPart : null);
+        BodyPartItem realPart = GetRandomBodyPart (RealBodyPartList, type, PreviousSolution.RealPart != null ? PreviousSolution.RealPart : null);
 
         // Match a fake body part with it
         BodyPartItem fakePart = FakeBodyPartList.Find ((item) => item.Colour == realPart.Colour && item.Type == realPart.Type && item.Category == realPart.Category);
@@ -58,7 +72,7 @@ public class PuzzleGenerator : MonoBehaviour {
     }
 
     public void FillTray (BodyPartType type = BodyPartType.Hair) {
-        TrayPartArray = new List<BodyPartItem> ();
+        TrayPartList.Clear ();
         Solution sol = GetSolution (type);
 
         if (!sol.FakePart) {
@@ -68,7 +82,7 @@ public class PuzzleGenerator : MonoBehaviour {
 
         BodyPartItem solutionFakePart = sol.FakePart;
 
-        TrayPartArray.Add (solutionFakePart);
+        TrayPartList.Add (solutionFakePart);
 
         var tempFakePartList = new List<BodyPartItem> (FakeBodyPartList);
 
@@ -80,7 +94,7 @@ public class PuzzleGenerator : MonoBehaviour {
 
         BodyPartItem newPart = equalTypeCategory[Random.Range (0, equalTypeCategory.Count)];
         tempFakePartList.Remove (newPart);
-        TrayPartArray.Add (newPart);
+        TrayPartList.Add (newPart);
         Debug.Log ("Equal Type + Category: " + newPart.ToString ());
 
         // Equal Type + Colour
@@ -88,7 +102,7 @@ public class PuzzleGenerator : MonoBehaviour {
 
         newPart = equalTypeColour[Random.Range (0, equalTypeColour.Count)];
         tempFakePartList.Remove (newPart);
-        TrayPartArray.Add (newPart);
+        TrayPartList.Add (newPart);
         Debug.Log ("Equal Type + Colour: " + newPart.ToString ());
 
         // Equal Type (Not equal color + category)
@@ -96,11 +110,11 @@ public class PuzzleGenerator : MonoBehaviour {
 
         newPart = equalType[Random.Range (0, equalType.Count)];
         tempFakePartList.Remove (newPart);
-        TrayPartArray.Add (newPart);
+        TrayPartList.Add (newPart);
         Debug.Log ("Equal Type: " + newPart.ToString ());
 
-        TrayPartArray.Shuffle ();
-        foreach (BodyPartItem item in TrayPartArray) {
+        TrayPartList.Shuffle ();
+        foreach (BodyPartItem item in TrayPartList) {
             Debug.Log (item.name == solutionFakePart.name ? "(solution) " + item.ToString () : item.ToString ());
         }
     }
