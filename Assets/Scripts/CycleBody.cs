@@ -71,16 +71,18 @@ public class CycleBody : MonoBehaviour {
         tray.gameObject.GetComponent<Animator> ().SetTrigger ("Hide");
         portrait.gameObject.GetComponent<Animator> ().SetTrigger ("Hide");
         curtains.gameObject.GetComponent<Animator> ().SetTrigger ("Open");
-        coffinRotation.gameObject.GetComponent<Animator> ().SetTrigger ("Next Coffin");
+        coffinRotation.gameObject.GetComponent<Animator>().SetTrigger("Empty Table");
 
-        yield return new WaitForSeconds (3.0f);
 
-        closedCoffin.SetActive (true);
+        yield return new WaitForSeconds (1.5f);
+
+        //Replace the animated coffin with the closed coffin
+        //closedCoffin.SetActive (true);
 
         tray.gameObject.GetComponent<Animator> ().SetTrigger ("Show");
         portrait.gameObject.GetComponent<Animator> ().SetTrigger ("Show");
         curtains.gameObject.GetComponent<Animator> ().SetTrigger ("Close");
-        coffinRotation.gameObject.GetComponent<Animator> ().SetTrigger ("Empty Table");
+        coffinRotation.gameObject.GetComponent<Animator>().SetTrigger("Next Coffin");
 
         yield return new WaitForSeconds (1.0f);
 
