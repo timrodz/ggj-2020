@@ -38,7 +38,6 @@ public class PuzzleGenerator : MonoBehaviour {
         SolutionDict.Clear ();
     }
 
-    [ContextMenu ("Run: Get Solution")]
     public Solution GetSolution (BodyPartType type = BodyPartType.Hair) {
         if (PreviousSolution != null) {
             Debug.LogFormat ("Previous Solution: " + PreviousSolution.ToString ());
@@ -58,7 +57,6 @@ public class PuzzleGenerator : MonoBehaviour {
         return CurrentSolution;
     }
 
-    [ContextMenu ("Run: Fill Tray")]
     public void FillTray (BodyPartType type = BodyPartType.Hair) {
         TrayPartArray = new List<BodyPartItem> ();
         Solution sol = GetSolution (type);
@@ -128,5 +126,15 @@ public class PuzzleGenerator : MonoBehaviour {
         }
         int count = SolutionDict.IncrementCount (key);
         Debug.LogFormat ("Adding solution to dict: {0}, Count: {1}", key, count);
+    }
+
+    [ContextMenu ("Run: Get Solution")]
+    public void TestGetSolution () {
+        GetSolution (BodyPartType.Hair);
+    }
+
+    [ContextMenu ("Run: Fill Tray")]
+    public void TestFillTray () {
+        FillTray (BodyPartType.Hair);
     }
 }

@@ -28,8 +28,6 @@ public class TrayFiller : MonoBehaviour
     {
         partCount++;
         GameObject obj = Instantiate(basePrefab, Vector3.zero, Quaternion.identity);
-        obj.transform.position = item.Position;
-        obj.transform.eulerAngles = item.Rotation;
         obj.name = string.Format("body-part-{0}-[{1}]", partCount, item.name);
     }
 
