@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class BodyPartSpawner : MonoBehaviour
 {
-	public GameObject basePrefab;
+	public GameObject BasePrefab;
     
     [SerializeField]
 	private List<BodyPartItem> m_bodyPartItemList = new List<BodyPartItem>();
@@ -13,10 +12,10 @@ public class BodyPartSpawner : MonoBehaviour
 
 	public void CreateBodyPart(BodyPartItem item) {
 		partCount++;
-        GameObject obj = Instantiate(basePrefab, Vector3.zero, Quaternion.identity);
-		obj.transform.position = item.Position;
-		obj.transform.eulerAngles = item.Rotation;
-		obj.name = string.Format("body-part-{0}-[{1}]", partCount, item.name);
+        GameObject obj = Instantiate(BasePrefab, Vector3.zero, Quaternion.identity);
+		// obj.transform.position = item.Position;
+		// obj.transform.eulerAngles = item.Rotation;
+		obj.name = string.Format("body-part-{0}_parent:[{1}]", partCount, item.name);
     }
     
     private void Update() {
