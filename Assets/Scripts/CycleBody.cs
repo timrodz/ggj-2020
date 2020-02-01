@@ -13,6 +13,7 @@ public class CycleBody : MonoBehaviour {
     public GameObject curtains;
     public GameObject coffinRotation;
     public GameObject closedCoffin;
+    public GameObject openClosedSendCoffin; 
 
     public Button button1;
     public Button button2;
@@ -72,21 +73,30 @@ public class CycleBody : MonoBehaviour {
         portrait.gameObject.GetComponent<Animator> ().SetTrigger ("Hide");
         curtains.gameObject.GetComponent<Animator> ().SetTrigger ("Open");
         coffinRotation.gameObject.GetComponent<Animator>().SetTrigger("Empty Table");
-
+        openClosedSendCoffin.gameObject.GetComponent<Animator>().SetTrigger("Close_Coffin");
 
         yield return new WaitForSeconds (1.5f);
 
+        openClosedSendCoffin.SetActive(true);
+        openClosedSendCoffin.gameObject.GetComponent<Animator>().SetTrigger("Send_Coffin");
+        
         //Replace the animated coffin with the closed coffin
         //closedCoffin.SetActive (true);
+
 
         tray.gameObject.GetComponent<Animator> ().SetTrigger ("Show");
         portrait.gameObject.GetComponent<Animator> ().SetTrigger ("Show");
         curtains.gameObject.GetComponent<Animator> ().SetTrigger ("Close");
+
+        yield return new WaitForSeconds(1.0f);
+
         coffinRotation.gameObject.GetComponent<Animator>().SetTrigger("Next Coffin");
 
-        yield return new WaitForSeconds (1.0f);
+        yield return new WaitForSeconds (1.5f);
 
-		SetButtonsInteractable(true);
+        openClosedSendCoffin.gameObject.GetComponent<Animator>().SetTrigger("Open_Coffin");
+
+        SetButtonsInteractable(true);
 
 		OnCarryOutFinish?.Invoke();
     }
