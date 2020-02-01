@@ -53,8 +53,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 52b58ccaff4424d9689d6c51c8617cc2, type: 2}
   - {fileID: 11400000, guid: b6daf1f800b844bc98959d70cd5eca32, type: 2}
   - {fileID: 11400000, guid: 7e48ac3b75a404baaaa3acd4f1282db6, type: 2}
-  TrayPartArray:
-  - {fileID: 11400000, guid: 7f5a842913e6b498e9d82f04f6bd3d79, type: 2}
-  - {fileID: 11400000, guid: 761098d1df6ca45468e7ea14f16649e5, type: 2}
-  - {fileID: 11400000, guid: cf6ea035229014bda8954e34d329d2c0, type: 2}
-  - {fileID: 11400000, guid: 7e48ac3b75a404baaaa3acd4f1282db6, type: 2}
+  TrayPartArray: []
