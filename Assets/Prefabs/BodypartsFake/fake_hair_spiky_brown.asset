@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsReal: 0
   Type: 0
-  Category: 0
+  Category: 1
   Colour: 6
   Sprite: {fileID: 0}

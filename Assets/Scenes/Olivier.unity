@@ -183,35 +183,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1879075553691096002, guid: 1c46715d8844840e98a36b7e396f60f4,
-        type: 3}
-      propertyPath: FakeBodyPartList.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1879075553691096002, guid: 1c46715d8844840e98a36b7e396f60f4,
-        type: 3}
-      propertyPath: FakeBodyPartList.Array.data[6]
-      value: 
-      objectReference: {fileID: 11400000, guid: 973f20de0eb921e4587758c5a623e895,
-        type: 2}
-    - target: {fileID: 1879075553691096002, guid: 1c46715d8844840e98a36b7e396f60f4,
-        type: 3}
-      propertyPath: FakeBodyPartList.Array.data[7]
-      value: 
-      objectReference: {fileID: 11400000, guid: 07184f840e1a1c6459a2a540a2ab76e8,
-        type: 2}
-    - target: {fileID: 1879075553691096002, guid: 1c46715d8844840e98a36b7e396f60f4,
-        type: 3}
-      propertyPath: FakeBodyPartList.Array.data[8]
-      value: 
-      objectReference: {fileID: 11400000, guid: fd307ba21fd39df4ea67a3aec21667e1,
-        type: 2}
-    - target: {fileID: 1879075553691096002, guid: 1c46715d8844840e98a36b7e396f60f4,
-        type: 3}
-      propertyPath: FakeBodyPartList.Array.data[9]
-      value: 
-      objectReference: {fileID: 11400000, guid: 5d01a82477eba23408e2e659fdeff528,
-        type: 2}
     - target: {fileID: 1879075553691096003, guid: 1c46715d8844840e98a36b7e396f60f4,
         type: 3}
       propertyPath: m_Name
