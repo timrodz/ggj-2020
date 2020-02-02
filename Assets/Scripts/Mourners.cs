@@ -21,13 +21,13 @@ public class Mourners : MonoBehaviour
     }
 
 
-    private void ActivateMourners()
-    {
-        for (int i = 0; i < MournerObjects.Count; ++i)
-        {
-            MournerObjects[i].gameObject.SetActive(true);
-        }
-    }
+    //private void ActivateMourners()
+    //{
+    //    for (int i = 0; i < MournerObjects.Count; ++i)
+    //    {
+    //        MournerObjects[i].gameObject.SetActive(true);
+    //    }
+    //}
 
     public void DeactivateMourners()
     {
