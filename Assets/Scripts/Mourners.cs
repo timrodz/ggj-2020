@@ -50,11 +50,18 @@ public class Mourners : MonoBehaviour {
             } else {
                 MournerObjects[i].sadFace.SetActive (true);
             }
-            MournerObjects[i].transform.DOScale (Vector3.one, 1.0f).SetEase (Ease.OutBack);
-            MournerObjects[i].transform.DOShakePosition (0.15f, 0.3f, 3, 35);
-            tempScore--;
+			MournerObjects[i].transform.DOScale(Vector3.one, 1.0f).SetEase(Ease.OutBack);
+			tempScore--;
         }
 
         MournerObjects.Shuffle ();
-    }
+		yield return new WaitForSeconds(1.0f);
+		for (int i = 0; i < MournerObjects.Count; ++i)
+		{
+            if (MournerObjects[i].happyFace.activeInHierarchy) {
+                MournerObjects[i].transform.DOShakePosition(1f, 0.5f);
+                MournerObjects[i].transform.DOShakeRotation(1f, 45);
+            }
+		}
+	}
 }

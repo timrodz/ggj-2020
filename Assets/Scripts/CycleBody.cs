@@ -26,20 +26,7 @@ public class CycleBody : MonoBehaviour {
     }
 
     private void OnScore (int score) {
-        StartCoroutine (CarryOutBodySwapOut ());
-        
-        if (score == 4) {
-			AudioManager.Instance.PlayFX("cheering");
-		}
-        else if (score == 3) {
-            AudioManager.Instance.PlayFX("applause");
-        }
-        else if (score == 2) {
-            AudioManager.Instance.PlayFX("man_cry");
-        }
-        else {
-            AudioManager.Instance.PlayFX("woman_scream");
-        }
+        StartCoroutine (CarryOutBodySwapOut (score));
     }
 
     private void Start () {
@@ -68,40 +55,60 @@ public class CycleBody : MonoBehaviour {
     }
 
     public void SelectBodyPart (int buttonNumber) {
-        // AudioManager.Instance.PlayFX ("belt");
-        Debug.LogFormat ("Selected body part: {0}", buttonNumber);
+        AudioManager.Instance.PlayFX ("squelch");
         SetButtonsInteractable (false);
+		Debug.LogFormat ("Selected body part: {0}", buttonNumber);
         OnClick?.Invoke (buttonNumber);
-    }
+	}
 
-    IEnumerator CarryOutBodySwapOut () {
+    IEnumerator CarryOutBodySwapOut (int score) {
         //Hide the tray and portrait
         tray.gameObject.GetComponent<Animator> ()?.SetTrigger ("Hide");
         portrait.gameObject.GetComponent<Animator> ()?.SetTrigger ("Hide");
         //Wait
-        yield return new WaitForSeconds (1.5f);
+        yield return new WaitForSeconds (0.75f);
+        if (score == 4) {
+			AudioManager.Instance.PlayFX("cheering");
+		}
+        else if (score == 3) {
+            AudioManager.Instance.PlayFX("applause");
+        }
+        else if (score == 2) {
+            AudioManager.Instance.PlayFX("man_cry");
+        }
+        else {
+            AudioManager.Instance.PlayFX("woman_scream");
+        }
+        yield return new WaitForSeconds (0.75f);
         //Close the coffin
         coffinRotation.gameObject.GetComponent<Animator> ()?.SetTrigger ("Close_Coffin");
         //Wait
-        yield return new WaitForSeconds (1.5f);
+        yield return new WaitForSeconds (0.85f);
+        AudioManager.Instance.PlayFX("squeak");
+        yield return new WaitForSeconds (0.65f);
         //Send off the Coffin
         coffinRotation.gameObject.GetComponent<Animator> ()?.SetTrigger ("Send_Coffin");
-        //Wait
-        // yield return new WaitForSeconds(0.5f);
-        yield return new WaitForSeconds (2.5f);
+		//Wait
+		// yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds (2.5f);
         OnCarryOutStart?.Invoke ();
         //Bring in a new coffin
         coffinRotation.gameObject.GetComponent<Animator> ()?.SetTrigger ("Empty Table");
         coffinRotation.gameObject.GetComponent<Animator> ()?.SetTrigger ("Next Coffin");
-        yield return new WaitForSeconds (2.6f);
+		AudioManager.Instance.PlayFX("belt");
+		yield return new WaitForSeconds (2.6f);
+        AudioManager.Instance.PlayFX("creak");
         //wait
         yield return new WaitForSeconds (1.0f);
         //Show the tray and portrait
         tray.gameObject.GetComponent<Animator> ()?.SetTrigger ("Show");
         portrait.gameObject.GetComponent<Animator> ()?.SetTrigger ("Show");
 
-        //In able the buttons
-        SetButtonsInteractable (true);
+		yield return new WaitForSeconds(0.7f);
+        AudioManager.Instance.PlayFX("creak");
+        
+		//In able the buttons
+		SetButtonsInteractable (true);
         OnCarryOutFinish?.Invoke ();
     }
 

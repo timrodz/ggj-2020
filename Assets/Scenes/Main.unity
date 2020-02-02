@@ -475,71 +475,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
+    - target: {fileID: 20287632976401093, guid: 5730cdc52260746799a527f9ef3d5f67,
         type: 3}
-      propertyPath: audioFiles.Array.size
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: audioFiles.Array.data[6].Clip
+      propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 48d83e8df4730934a98dea71e8368bfc, type: 3}
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: audioFiles.Array.data[6].id
-      value: applause
-      objectReference: {fileID: 0}
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: audioFiles.Array.data[7].Clip
-      value: 
-      objectReference: {fileID: 8300000, guid: e9c27e39db81d874db3169ee8e0b84a7, type: 3}
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: audioFiles.Array.data[7].id
-      value: girl_scream
-      objectReference: {fileID: 0}
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: audioFiles.Array.data[8].Clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 90e87ea74fbc61b4d95d6c8bb01096b9, type: 3}
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: audioFiles.Array.data[8].id
-      value: man_scream
-      objectReference: {fileID: 0}
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: audioFiles.Array.data[9].Clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 218f91be0d8273645b56571879ab7274, type: 3}
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: audioFiles.Array.data[9].id
-      value: woman_scream
-      objectReference: {fileID: 0}
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: audioFiles.Array.data[10].Clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 01a08f3b3c93c5f45845961437a140a3, type: 3}
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: audioFiles.Array.data[10].id
-      value: mech_rotation
-      objectReference: {fileID: 0}
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: audioFiles.Array.data[11].Clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0982715147d3fe249969b6df3ecdcc26, type: 3}
-    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: audioFiles.Array.data[11].id
-      value: man_cry
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: c6606e6e5304440f9ad8b3c1e56adef9, type: 3}
     - target: {fileID: 20287632976401095, guid: 5730cdc52260746799a527f9ef3d5f67,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -594,16 +534,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 20287632976401114, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: c22229809baa95c49af181c8fb0abddd, type: 3}
-    - target: {fileID: 20287632976401114, guid: 5730cdc52260746799a527f9ef3d5f67,
-        type: 3}
-      propertyPath: Loop
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 20287632976401115, guid: 5730cdc52260746799a527f9ef3d5f67,
         type: 3}
@@ -775,12 +705,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1879075553691096002, guid: 1c46715d8844840e98a36b7e396f60f4,
-        type: 3}
-      propertyPath: FakeBodyPartList.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 761098d1df6ca45468e7ea14f16649e5,
-        type: 2}
     - target: {fileID: 1879075553691096003, guid: 1c46715d8844840e98a36b7e396f60f4,
         type: 3}
       propertyPath: m_Name
