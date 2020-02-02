@@ -48,7 +48,8 @@ MonoBehaviour:
   curtains: {fileID: 0}
   coffinRotation: {fileID: 0}
   closedCoffin: {fileID: 0}
-  openCloseSendCoffin: {fileID: 0}
+  head: {fileID: 0}
+  coffinOpen: {fileID: 0}
   button1: {fileID: 2871496101911364589}
   button2: {fileID: 2871496102326950620}
   button3: {fileID: 2871496102892467261}
