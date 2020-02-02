@@ -13,6 +13,8 @@ public class CycleBody : MonoBehaviour {
     public GameObject curtains;
     public GameObject coffinRotation;
     public GameObject closedCoffin;
+    public GameObject head;
+    public GameObject coffinOpen;
 
     public Button button1;
     public Button button2;
@@ -31,6 +33,17 @@ public class CycleBody : MonoBehaviour {
     private void Start () {
         SetButtonsInteractable (false);
         StartCoroutine (CarryBodySwapIn ());
+    }
+    private void Update()
+    {
+        if(coffinOpen.activeInHierarchy)
+        {
+            head.SetActive(true);
+        }
+        else
+        {
+            head.SetActive(false);
+        }
     }
 
     IEnumerator CarryBodySwapIn () {
@@ -65,6 +78,8 @@ public class CycleBody : MonoBehaviour {
         //Close the coffin
         coffinRotation.gameObject.GetComponent<Animator>()?.SetTrigger("Close_Coffin");
         // curtains.gameObject.GetComponent<Animator> ()?.SetTrigger ("Open");
+        //yield return new WaitForSeconds(1.0f);
+        //head.SetActive(false);
         //Wait
         yield return new WaitForSeconds(1.5f);
         //Send off the Coffin
@@ -75,8 +90,9 @@ public class CycleBody : MonoBehaviour {
         coffinRotation.gameObject.GetComponent<Animator> ()?.SetTrigger ("Empty Table");
         // curtains.gameObject.GetComponent<Animator> ()?.SetTrigger ("Close");
         coffinRotation.gameObject.GetComponent<Animator>()?.SetTrigger("Next Coffin");
-        yield return new WaitForSeconds (1.0f);
+        yield return new WaitForSeconds (2.6f);
         //wait
+        //head.SetActive(true);
         yield return new WaitForSeconds (1.0f);
         //Show the tray and portrait
         tray.gameObject.GetComponent<Animator>()?.SetTrigger("Show");
