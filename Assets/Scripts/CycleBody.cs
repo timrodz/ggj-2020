@@ -68,7 +68,7 @@ public class CycleBody : MonoBehaviour {
     }
 
     public void SelectBodyPart (int buttonNumber) {
-        AudioManager.Instance.PlayFX ("belt");
+        // AudioManager.Instance.PlayFX ("belt");
         Debug.LogFormat ("Selected body part: {0}", buttonNumber);
         SetButtonsInteractable (false);
         OnClick?.Invoke (buttonNumber);

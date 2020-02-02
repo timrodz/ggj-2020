@@ -21,6 +21,7 @@ public class AudioManager : Singleton<AudioManager> {
         AudioFile af = audioFiles.Find ((file) => file.id == id);
         if (af.Clip != null) {
             FX.PlayOneShot (af.Clip);
-        }
+			Debug.LogFormat("Playing sound: {0}", af.Clip.name);
+		}
     }
 }
