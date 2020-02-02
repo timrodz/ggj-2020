@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class BodyPartItemObject : MonoBehaviour {
 	public BodyPartItem Item;
 
-	private Color brown = new Color (205f / 255f, 133f / 255f, 63f / 255f, 1);
+	private Color brown = new Color (255 / 255f, 162 / 255f, 11 / 255f, 1);
+	private Color yellow = new Color (255 / 255f, 219 / 255f, 0, 1);
 
 	public void Reset () {
 		var sr = GetComponent<SpriteRenderer> ();
@@ -17,7 +18,7 @@ public class BodyPartItemObject : MonoBehaviour {
 		Item = item;
 		var sr = GetComponent<SpriteRenderer> ();
 		sr.sprite = item.Sprite;
-		sr.color = item.Colour == BodyPartColour.Yellow ? Color.yellow : brown;
+		sr.color = item.Colour == BodyPartColour.Yellow ? yellow : brown;
 		transform.localPosition = item.Offset;
 		Debug.LogFormat ("Position: {0}, offset: {1}", transform.localPosition, item.Offset);
 	}
@@ -26,6 +27,6 @@ public class BodyPartItemObject : MonoBehaviour {
 		Item = item;
 		var im = GetComponent<Image> ();
 		im.sprite = item.Sprite;
-		im.color = item.Colour == BodyPartColour.Yellow ? Color.yellow : brown;
+		im.color = item.Colour == BodyPartColour.Yellow ? yellow : brown;
 	}
 }
