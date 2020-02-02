@@ -19,12 +19,12 @@ public class PuzzleTrayController : MonoBehaviour {
     
     private void OnEnable() {
 		CycleBody.OnClick += OnBodyPartSelected;
-		CycleBody.OnCarryOutFinish += OnReset;
+		CycleBody.OnCarryOutStart += OnReset;
 	}
     
     private void OnDisable() {
 		CycleBody.OnClick -= OnBodyPartSelected;
-		CycleBody.OnCarryOutFinish -= OnReset;
+		CycleBody.OnCarryOutStart -= OnReset;
 	}
     
     private void OnBodyPartSelected(int buttonNumber) {
