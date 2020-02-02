@@ -27,6 +27,19 @@ public class CycleBody : MonoBehaviour {
 
     private void OnScore (int score) {
         StartCoroutine (CarryOutBodySwapOut ());
+        
+        if (score == 4) {
+			AudioManager.Instance.PlayFX("cheering");
+		}
+        else if (score == 3) {
+            AudioManager.Instance.PlayFX("applause");
+        }
+        else if (score == 2) {
+            AudioManager.Instance.PlayFX("man_cry");
+        }
+        else {
+            AudioManager.Instance.PlayFX("woman_scream");
+        }
     }
 
     private void Start () {

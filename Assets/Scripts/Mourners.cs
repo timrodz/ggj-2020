@@ -7,6 +7,7 @@ using UnityEngine;
 public class Mourners : MonoBehaviour {
 
     public List<MournerMoods> MournerObjects = new List<MournerMoods> ();
+    public List<Vector3> MournerObjectPositions = new List<Vector3> ();
 
     public void DeactivateMourners () {
         for (int i = 0; i < MournerObjects.Count; ++i) {
@@ -17,6 +18,7 @@ public class Mourners : MonoBehaviour {
     private void Start () {
         for (int i = 0; i < MournerObjects.Count; ++i) {
             MournerObjects[i].gameObject.SetActive (false);
+            MournerObjectPositions.Add (MournerObjects[i].transform.localPosition);
         }
     }
 
@@ -49,6 +51,7 @@ public class Mourners : MonoBehaviour {
                 MournerObjects[i].sadFace.SetActive (true);
             }
             MournerObjects[i].transform.DOScale (Vector3.one, 1.0f).SetEase (Ease.OutBack);
+            MournerObjects[i].transform.DOShakePosition (0.15f, 0.3f, 3, 35);
             tempScore--;
         }
 
