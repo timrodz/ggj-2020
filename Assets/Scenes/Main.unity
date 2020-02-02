@@ -705,6 +705,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1879075553691096002, guid: 1c46715d8844840e98a36b7e396f60f4,
+        type: 3}
+      propertyPath: FakeBodyPartList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 761098d1df6ca45468e7ea14f16649e5,
+        type: 2}
     - target: {fileID: 1879075553691096003, guid: 1c46715d8844840e98a36b7e396f60f4,
         type: 3}
       propertyPath: m_Name
@@ -821,6 +827,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3331738112121869755, guid: e9129274ef886c04980d5ab01b7a0d55,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 3342066468155322597, guid: e9129274ef886c04980d5ab01b7a0d55,
         type: 3}
