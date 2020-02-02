@@ -22,7 +22,6 @@ public class CycleBody : MonoBehaviour {
     public Button button4;
 
     private void OnEnable () {
-		AudioManager.Instance.PlayFX("belt");
 		PuzzleTrayController.OnScoreCalculated += OnScore;
     }
 
@@ -60,6 +59,7 @@ public class CycleBody : MonoBehaviour {
     }
 
     public void SelectBodyPart (int buttonNumber) {
+        AudioManager.Instance.PlayFX("belt");
         Debug.LogFormat ("Selected body part: {0}", buttonNumber);
         SetButtonsInteractable (false);
         OnClick?.Invoke (buttonNumber);
@@ -68,8 +68,6 @@ public class CycleBody : MonoBehaviour {
     IEnumerator CarryOutBodySwapOut () {
         OnCarryOutStart?.Invoke ();
 
-        // TODO: Play score animation
-
         //Hide the tray and portrait
         tray.gameObject.GetComponent<Animator>()?.SetTrigger("Hide");
         portrait.gameObject.GetComponent<Animator>()?.SetTrigger("Hide");
@@ -77,9 +75,6 @@ public class CycleBody : MonoBehaviour {
         yield return new WaitForSeconds(1.5f);
         //Close the coffin
         coffinRotation.gameObject.GetComponent<Animator>()?.SetTrigger("Close_Coffin");
-        // curtains.gameObject.GetComponent<Animator> ()?.SetTrigger ("Open");
-        //yield return new WaitForSeconds(1.0f);
-        //head.SetActive(false);
         //Wait
         yield return new WaitForSeconds(1.5f);
         //Send off the Coffin
@@ -88,11 +83,9 @@ public class CycleBody : MonoBehaviour {
         yield return new WaitForSeconds(2.5f);
         //Bring in a new coffin
         coffinRotation.gameObject.GetComponent<Animator> ()?.SetTrigger ("Empty Table");
-        // curtains.gameObject.GetComponent<Animator> ()?.SetTrigger ("Close");
         coffinRotation.gameObject.GetComponent<Animator>()?.SetTrigger("Next Coffin");
         yield return new WaitForSeconds (2.6f);
         //wait
-        //head.SetActive(true);
         yield return new WaitForSeconds (1.0f);
         //Show the tray and portrait
         tray.gameObject.GetComponent<Animator>()?.SetTrigger("Show");
@@ -101,7 +94,6 @@ public class CycleBody : MonoBehaviour {
 
         //In able the buttons
         SetButtonsInteractable(true);
-
         OnCarryOutFinish?.Invoke ();
     }
 
