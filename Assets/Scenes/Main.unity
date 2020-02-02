@@ -121,11 +121,86 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &327246227
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4831239452295805562, guid: c2ca516d6aa8d79448b3382c3f841d28,
+        type: 3}
+      propertyPath: m_Name
+      value: OpenCloseSendCoffin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571739876907278835, guid: c2ca516d6aa8d79448b3382c3f841d28,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571739876907278835, guid: c2ca516d6aa8d79448b3382c3f841d28,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571739876907278835, guid: c2ca516d6aa8d79448b3382c3f841d28,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571739876907278835, guid: c2ca516d6aa8d79448b3382c3f841d28,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571739876907278835, guid: c2ca516d6aa8d79448b3382c3f841d28,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571739876907278835, guid: c2ca516d6aa8d79448b3382c3f841d28,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571739876907278835, guid: c2ca516d6aa8d79448b3382c3f841d28,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571739876907278835, guid: c2ca516d6aa8d79448b3382c3f841d28,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571739876907278835, guid: c2ca516d6aa8d79448b3382c3f841d28,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571739876907278835, guid: c2ca516d6aa8d79448b3382c3f841d28,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7571739876907278835, guid: c2ca516d6aa8d79448b3382c3f841d28,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2ca516d6aa8d79448b3382c3f841d28, type: 3}
 --- !u!1 &506511300 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3293244831514767287, guid: 615e0e1e3ad72eb479baefb680f22aef,
     type: 3}
   m_PrefabInstance: {fileID: 1224378254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &661198314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4831239452295805562, guid: c2ca516d6aa8d79448b3382c3f841d28,
+    type: 3}
+  m_PrefabInstance: {fileID: 327246227}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &867130715 stripped
 MonoBehaviour:
@@ -284,6 +359,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1879075553691096002, guid: 1c46715d8844840e98a36b7e396f60f4,
+        type: 3}
+      propertyPath: FakeBodyPartList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 761098d1df6ca45468e7ea14f16649e5,
+        type: 2}
     - target: {fileID: 1879075553691096003, guid: 1c46715d8844840e98a36b7e396f60f4,
         type: 3}
       propertyPath: m_Name
@@ -673,6 +754,11 @@ PrefabInstance:
       propertyPath: closedCoffin
       value: 
       objectReference: {fileID: 1211054182}
+    - target: {fileID: 2871496101364449093, guid: 8e8ad2f5c51b429469aec9743f4ffc13,
+        type: 3}
+      propertyPath: openCloseSendCoffin
+      value: 
+      objectReference: {fileID: 661198314}
     - target: {fileID: 2871496101954988185, guid: 8e8ad2f5c51b429469aec9743f4ffc13,
         type: 3}
       propertyPath: m_Name
