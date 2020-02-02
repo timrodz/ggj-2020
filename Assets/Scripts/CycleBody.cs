@@ -19,46 +19,25 @@ public class CycleBody : MonoBehaviour {
     public Button button3;
     public Button button4;
 
-    // If you press any one assign that Part to the slot on the corpse
-    //Wait
-    //Hide the Tray
-    //Wait
-    //Close the coffin
-    //Roll the coffin into the Viewing room
-    //Wait
-    //Open the Coffin
-    //REVEAL FX
-    //Wait
-    //Award points
-    //Wait
-    //coffin gets kicked out
-    //Hide viewing room
-    //Reset viewing room (Ask about how to call the new answer)
-    //Reveal the viewing room
-    //Roll the belt to put the body in the centre
-    //Open the coffin
-    //Filled the tray with the options
-    //show the tray
-
-    //Use this to assign the chosen part to the corpse
-    private void OnEnable() {
+    private void OnEnable () {
+		AudioManager.Instance.PlayFX("belt");
 		PuzzleTrayController.OnScoreCalculated += OnScore;
-	}
-    
-    private void OnScore(int score) {
+    }
+
+    private void OnScore (int score) {
         StartCoroutine (CarryOutBodySwapOut ());
     }
-    
-    private void Start() {
-		SetButtonsInteractable(false);
-		StartCoroutine(CarryBodySwapIn());
-	}
-    
-    IEnumerator CarryBodySwapIn() {
+
+    private void Start () {
+        SetButtonsInteractable (false);
+        StartCoroutine (CarryBodySwapIn ());
+    }
+
+    IEnumerator CarryBodySwapIn () {
         yield return new WaitForSeconds (1.5f);
-		SetButtonsInteractable(true);
+        SetButtonsInteractable (true);
         OnCarryOutFinish?.Invoke ();
-	}
+    }
 
     private void SetButtonsInteractable (bool value) {
         button1.interactable = value;
