@@ -13,7 +13,6 @@ public class CycleBody : MonoBehaviour {
     public GameObject curtains;
     public GameObject coffinRotation;
     public GameObject closedCoffin;
-    public GameObject openCloseSendCoffin;
 
     public Button button1;
     public Button button2;
@@ -83,16 +82,16 @@ public class CycleBody : MonoBehaviour {
         tray.gameObject.GetComponent<Animator>()?.SetTrigger("Hide");
         portrait.gameObject.GetComponent<Animator>()?.SetTrigger("Hide");
         //Wait
-        yield return new WaitForSeconds(1.0f);
-        //Close the lid and open the curtains
-        openCloseSendCoffin.gameObject.GetComponent<Animator>()?.SetTrigger("Close_Coffin");
+        yield return new WaitForSeconds(1.5f);
+        //Close the coffin
+        coffinRotation.gameObject.GetComponent<Animator>()?.SetTrigger("Close_Coffin");
         // curtains.gameObject.GetComponent<Animator> ()?.SetTrigger ("Open");
         //Wait
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(1.5f);
         //Send off the Coffin
-        openCloseSendCoffin.gameObject.GetComponent<Animator>()?.SetTrigger("Send_Coffin");
+        coffinRotation.gameObject.GetComponent<Animator>()?.SetTrigger("Send_Coffin");
         //Wait
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(2.5f);
         //Bring in a new coffin
         coffinRotation.gameObject.GetComponent<Animator> ()?.SetTrigger ("Empty Table");
         // curtains.gameObject.GetComponent<Animator> ()?.SetTrigger ("Close");
@@ -103,8 +102,7 @@ public class CycleBody : MonoBehaviour {
         //Show the tray and portrait
         tray.gameObject.GetComponent<Animator>()?.SetTrigger("Show");
         portrait.gameObject.GetComponent<Animator>()?.SetTrigger("Show");
-        //Open the coffin
-        openCloseSendCoffin.gameObject.GetComponent<Animator>()?.SetTrigger("Open_Coffin");
+
 
         //In able the buttons
         SetButtonsInteractable(true);
