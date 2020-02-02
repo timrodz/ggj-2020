@@ -59,6 +59,18 @@ MonoBehaviour:
     id: squelch
   - Clip: {fileID: 8300000, guid: a5cb2f79d7dcd4e0694257df730e627e, type: 3}
     id: vomit
+  - Clip: {fileID: 8300000, guid: 48d83e8df4730934a98dea71e8368bfc, type: 3}
+    id: applause
+  - Clip: {fileID: 8300000, guid: e9c27e39db81d874db3169ee8e0b84a7, type: 3}
+    id: girl_scream
+  - Clip: {fileID: 8300000, guid: 90e87ea74fbc61b4d95d6c8bb01096b9, type: 3}
+    id: man_scream
+  - Clip: {fileID: 8300000, guid: 218f91be0d8273645b56571879ab7274, type: 3}
+    id: woman_scream
+  - Clip: {fileID: 8300000, guid: 01a08f3b3c93c5f45845961437a140a3, type: 3}
+    id: mech_rotation
+  - Clip: {fileID: 8300000, guid: 0982715147d3fe249969b6df3ecdcc26, type: 3}
+    id: man_cry
 --- !u!82 &20287632976401093
 AudioSource:
   m_ObjectHideFlags: 0
@@ -165,11 +177,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c22229809baa95c49af181c8fb0abddd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

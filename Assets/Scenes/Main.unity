@@ -233,27 +233,67 @@ PrefabInstance:
     - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
         type: 3}
       propertyPath: audioFiles.Array.size
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
         type: 3}
       propertyPath: audioFiles.Array.data[6].Clip
       value: 
-      objectReference: {fileID: 8300000, guid: a5cb2f79d7dcd4e0694257df730e627e, type: 3}
+      objectReference: {fileID: 8300000, guid: 48d83e8df4730934a98dea71e8368bfc, type: 3}
     - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
         type: 3}
       propertyPath: audioFiles.Array.data[6].id
-      value: vomit
+      value: applause
       objectReference: {fileID: 0}
     - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
         type: 3}
       propertyPath: audioFiles.Array.data[7].Clip
       value: 
-      objectReference: {fileID: 8300000, guid: a5cb2f79d7dcd4e0694257df730e627e, type: 3}
+      objectReference: {fileID: 8300000, guid: e9c27e39db81d874db3169ee8e0b84a7, type: 3}
     - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
         type: 3}
       propertyPath: audioFiles.Array.data[7].id
-      value: vomit
+      value: girl_scream
+      objectReference: {fileID: 0}
+    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
+        type: 3}
+      propertyPath: audioFiles.Array.data[8].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 90e87ea74fbc61b4d95d6c8bb01096b9, type: 3}
+    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
+        type: 3}
+      propertyPath: audioFiles.Array.data[8].id
+      value: man_scream
+      objectReference: {fileID: 0}
+    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
+        type: 3}
+      propertyPath: audioFiles.Array.data[9].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 218f91be0d8273645b56571879ab7274, type: 3}
+    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
+        type: 3}
+      propertyPath: audioFiles.Array.data[9].id
+      value: woman_scream
+      objectReference: {fileID: 0}
+    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
+        type: 3}
+      propertyPath: audioFiles.Array.data[10].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 01a08f3b3c93c5f45845961437a140a3, type: 3}
+    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
+        type: 3}
+      propertyPath: audioFiles.Array.data[10].id
+      value: mech_rotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
+        type: 3}
+      propertyPath: audioFiles.Array.data[11].Clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0982715147d3fe249969b6df3ecdcc26, type: 3}
+    - target: {fileID: 20287632976401092, guid: 5730cdc52260746799a527f9ef3d5f67,
+        type: 3}
+      propertyPath: audioFiles.Array.data[11].id
+      value: man_cry
       objectReference: {fileID: 0}
     - target: {fileID: 20287632976401095, guid: 5730cdc52260746799a527f9ef3d5f67,
         type: 3}
