@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 0b607023100000000470702310000000
 ScriptedImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2454369005138467541
+    second: BG_Layout_01_0
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -93,8 +96,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1826
-      y: 3198
+      x: 3021
+      y: 1445
       width: 74
       height: 74
     spriteID: ffc7dfbd946f7814eb678b34c18a247b
@@ -107,7 +110,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 745, y: 3126}
+    uvTransform: {x: 1940, y: 1373}
   - name: facePart03
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -115,8 +118,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1842
-      y: 2607
+      x: 3021
+      y: 1527
       width: 74
       height: 74
     spriteID: 959b6be387a150f4f9b7034a5d0c623c
@@ -129,7 +132,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 868, y: 2535}
+    uvTransform: {x: 2047, y: 1455}
   - name: facePart02
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -137,8 +140,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1842
-      y: 2689
+      x: 3021
+      y: 1609
       width: 74
       height: 74
     spriteID: b40827a0507664243a89bd8a28a8befe
@@ -151,29 +154,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 973, y: 2617}
-  - name: facePart01
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2213
-      y: 2772
-      width: 74
-      height: 74
-    spriteID: c987725de6da7d045b02d911cbd84d47
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1443, y: 2700}
+    uvTransform: {x: 2152, y: 1537}
   - name: PartsTray
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -181,8 +162,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2776
-      y: 4
+      x: 2822
+      y: 992
       width: 487
       height: 154
     spriteID: 654dba60c0baae1498f2c057cd035ec8
@@ -195,7 +176,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 2055, y: -7}
+    uvTransform: {x: 2101, y: 981}
   - name: PortraitFrame01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -203,8 +184,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1932
-      y: 3001
+      x: 1857
+      y: 897
       width: 245
       height: 245
     spriteID: b82a2e532f2ebd84f8a5ec86e6da5b9e
@@ -217,29 +198,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 701, y: 2654}
-  - name: coffinBottom
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1932
-      y: 2463
-      width: 219
-      height: 301
-    spriteID: 4e1ed90a59599fc4185b8a35d8ac4c89
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1085, y: 2287}
+    uvTransform: {x: 626, y: 550}
   - name: CorpseEyes01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -247,8 +206,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1351
-      y: 4019
+      x: 3201
+      y: 1683
       width: 155
       height: 52
     spriteID: 793f67b407a32934cbc625976a16e0f6
@@ -261,29 +220,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 448, y: 3458}
-  - name: CorpseHead01
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1932
-      y: 3254
-      width: 242
-      height: 233
-    spriteID: 884ffe586753f184a863f203a48aa5cb
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1093, y: 2831}
+    uvTransform: {x: 2298, y: 1122}
   - name: CorpseEars01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -291,8 +228,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1932
-      y: 3988
+      x: 3761
+      y: 1047
       width: 301
       height: 92
     spriteID: c8bb460bb58847442a1add9cf9302738
@@ -305,51 +242,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1125, y: 3492}
-  - name: coffin_Open
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 2802
-      width: 346
-      height: 509
-    spriteID: 6c5ad43b79671b94b8103696f8f1f824
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -843, y: 2626}
-  - name: coffinClosed
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 358
-      y: 2802
-      width: 219
-      height: 488
-    spriteID: 484a8491ec219c74381b4fe2fa61b396
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -489, y: 2626}
+    uvTransform: {x: 2955, y: 551}
   - name: Table01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -357,8 +250,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1932
-      y: 862
+      x: 2409
+      y: 1166
       width: 286
       height: 454
     spriteID: 083e8947c5993b04a99cc8e46d5df9f2
@@ -371,7 +264,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1119, y: 749}
+    uvTransform: {x: 1596, y: 1053}
   - name: belt01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -380,7 +273,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 605
-      y: 2188
+      y: 552
       width: 775
       height: 411
     spriteID: 2fdc7330cb7caf54281c5c68ea0f978f
@@ -393,7 +286,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 605, y: 2144}
+    uvTransform: {x: 605, y: 508}
   - name: BGCabinetsRight
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -401,8 +294,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2307
-      y: 4
+      x: 1388
+      y: 897
       width: 461
       height: 210
     spriteID: 64d7b552bcdbb3b43ae15de2ea87aafc
@@ -415,7 +308,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 848, y: -541}
+    uvTransform: {x: -71, y: 352}
   - name: BGCabinetsLeft
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -423,8 +316,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1327
-      y: 2607
+      x: 2110
+      y: 897
       width: 507
       height: 210
     spriteID: 724187841b7fc364fb2e29cd42d90b6d
@@ -437,7 +330,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1327, y: 2062}
+    uvTransform: {x: 2110, y: 352}
   - name: BGCounterTop
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -446,7 +339,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 2188
+      y: 552
       width: 593
       height: 606
     spriteID: ba6ba534860b216438d3365895ad8e5b
@@ -459,7 +352,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1323, y: 2188}
+    uvTransform: {x: -1323, y: 552}
   - name: middleWall02
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -467,8 +360,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 605
-      y: 2952
+      x: 2110
+      y: 552
       width: 704
       height: 337
     spriteID: 82884ba1ee2bc43489cb905e3bf7e27a
@@ -481,7 +374,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -611, y: 2488}
+    uvTransform: {x: 894, y: 88}
   - name: middleWall01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -489,8 +382,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 605
-      y: 2607
+      x: 1388
+      y: 552
       width: 714
       height: 337
     spriteID: dd7ac37ce8151594288570c5e989c1ec
@@ -503,51 +396,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 605, y: 2143}
-  - name: redWalls01
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1161
-      y: 3297
-      width: 375
-      height: 577
-    spriteID: 6c6dfab0822f7f74a83178dac2ec8c47
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -384, y: 2794}
-  - name: redWalls02
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1544
-      y: 3297
-      width: 375
-      height: 577
-    spriteID: c7f7a63e066996249a1c0c14a93eed6f
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1544, y: 2794}
+    uvTransform: {x: 1388, y: 88}
   - name: familyFace02
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -555,8 +404,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1351
-      y: 3882
+      x: 2518
+      y: 1628
       width: 101
       height: 71
     spriteID: 84995fa8253717b458340f5327320188
@@ -569,7 +418,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 43, y: 3055}
+    uvTransform: {x: 1210, y: 801}
   - name: familyFace01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -577,8 +426,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1717
-      y: 3198
+      x: 2409
+      y: 1628
       width: 101
       height: 83
     spriteID: efca2f9294ff9ab49b211203a8dc09e0
@@ -591,7 +440,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 409, y: 2383}
+    uvTransform: {x: 1101, y: 813}
   - name: familyTorso01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -599,8 +448,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1932
-      y: 1595
+      x: 3352
+      y: 1166
       width: 222
       height: 320
     spriteID: a551d275d703cea4fa06f1418f170512
@@ -613,7 +462,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 661, y: 947}
+    uvTransform: {x: 2081, y: 518}
   - name: curtainRod01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -621,8 +470,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1327
-      y: 2825
+      x: 605
+      y: 971
       width: 593
       height: 24
     spriteID: f57ac1a61ee69db49a73542bb78f3d33
@@ -635,7 +484,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 662, y: 2070}
+    uvTransform: {x: -60, y: 216}
   - name: rightCurtain01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -643,8 +492,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1932
-      y: 1923
+      x: 3582
+      y: 1166
       width: 256
       height: 262
     spriteID: 9bbdcca33ce83224d8e5d3445ebbeff5
@@ -657,7 +506,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 972, y: 1436}
+    uvTransform: {x: 2622, y: 679}
   - name: leftCurtain01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -665,8 +514,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1932
-      y: 2193
+      x: 3582
+      y: 1436
       width: 256
       height: 262
     spriteID: 7ca0231bbc1c84f47947bcbe73bb5878
@@ -679,7 +528,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1228, y: 1706}
+    uvTransform: {x: 2878, y: 949}
   - name: recpetionBG01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -688,7 +537,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1092
+      y: 4
       width: 1920
       height: 540
     spriteID: 1ad78e7f9a1399c498dc533d4929cf42
@@ -701,7 +550,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 552}
+    uvTransform: {x: 4, y: -536}
   - name: morgueBG01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -709,8 +558,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1640
+      x: 1932
+      y: 4
       width: 1920
       height: 540
     spriteID: d51eec97bd58b2c41b384a9b7c9c263e
@@ -723,7 +572,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 1640}
+    uvTransform: {x: 1932, y: 4}
   - name: CorpseHair01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -731,8 +580,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1388
-      y: 2188
+      x: 1116
+      y: 1166
       width: 442
       height: 360
     spriteID: 2d51a1df71ce04a499d0ccf8f8ca99be
@@ -745,7 +594,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 646, y: 1724}
+    uvTransform: {x: 374, y: 702}
   - name: CorpseHair02
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -753,8 +602,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 605
-      y: 3297
+      x: 2822
+      y: 552
       width: 548
       height: 432
     spriteID: bbf56add962d048369c037cba5a7ef00
@@ -767,7 +616,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -17, y: 2909}
+    uvTransform: {x: 2200, y: 164}
   - name: CorpseHair03
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -775,8 +624,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 605
-      y: 3737
+      x: 1937
+      y: 1166
       width: 464
       height: 305
     spriteID: 9f9a0d09162d64f518c330fa356456c7
@@ -789,7 +638,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -119, y: 3196}
+    uvTransform: {x: 1213, y: 625}
   - name: CorpseHair04
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -797,8 +646,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1932
-      y: 2772
+      x: 4
+      y: 1751
       width: 273
       height: 221
     spriteID: cbdd664104db945228b426e6c667ad79
@@ -811,7 +660,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1104, y: 2213}
+    uvTransform: {x: -824, y: 1192}
   - name: CorpseHair05
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -819,8 +668,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1932
-      y: 4
+      x: 741
+      y: 1166
       width: 367
       height: 436
     spriteID: 853fc1ada4b6c40c0b090b535e197179
@@ -833,7 +682,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1158, y: -515}
+    uvTransform: {x: -33, y: 647}
   - name: CorpseHair06
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -841,8 +690,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1932
-      y: 448
+      x: 1566
+      y: 1166
       width: 363
       height: 406
     spriteID: 9b1f2fee230254e8c8c937f2329479eb
@@ -855,7 +704,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1152, y: -116}
+    uvTransform: {x: 786, y: 602}
   - name: CorpseHair07
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -863,8 +712,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1932
-      y: 1324
+      x: 2703
+      y: 1445
       width: 310
       height: 263
     spriteID: 79980bf828b9a43b3abd2c240cee1131
@@ -877,7 +726,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1124, y: 865}
+    uvTransform: {x: 1895, y: 986}
   - name: CorpseHair08
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -885,8 +734,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 3319
+      x: 3761
+      y: 552
       width: 331
       height: 487
     spriteID: 7ad0af4685aff4eb59929ba0f72280cc
@@ -899,7 +748,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -796, y: 2987}
+    uvTransform: {x: 2961, y: 220}
   - name: CorpseHair09
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -907,8 +756,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 3814
+      x: 1937
+      y: 1479
       width: 455
       height: 257
     spriteID: 9a867331c22fc46f193cea63fd0a9f43
@@ -921,7 +770,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -708, y: 3253}
+    uvTransform: {x: 1225, y: 918}
   - name: CorpseHair10
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -929,8 +778,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1317
-      y: 2952
+      x: 2703
+      y: 1166
       width: 392
       height: 271
     spriteID: 9b2034784020e4279838a03b52af55c6
@@ -943,7 +792,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 544, y: 2441}
+    uvTransform: {x: 1930, y: 655}
   - name: RealHair_Fro
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -951,8 +800,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1932
-      y: 3737
+      x: 3352
+      y: 1494
       width: 216
       height: 243
     spriteID: c29631b72decc544cbe0554d0c69db93
@@ -965,7 +814,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 683, y: 3390}
+    uvTransform: {x: 2103, y: 1147}
   - name: RealHair_DreadLocks
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -973,8 +822,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1932
-      y: 3495
+      x: 4
+      y: 1980
       width: 232
       height: 234
     spriteID: d7f0144cd810d8b4891c888e3cf1c82a
@@ -987,7 +836,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 695, y: 3148}
+    uvTransform: {x: -1233, y: 1633}
   - name: RealHair_Spiky
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -995,8 +844,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1717
-      y: 2952
+      x: 4
+      y: 2222
       width: 202
       height: 238
     spriteID: 959bebd5cb2f5794bb793308e17e78d9
@@ -1009,7 +858,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 457, y: 2605}
+    uvTransform: {x: -1256, y: 1875}
   - name: RealHair_Beehive
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1017,8 +866,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2307
-      y: 222
+      x: 4
+      y: 2468
       width: 191
       height: 245
     spriteID: 0180424333084e94baf034a9dd606527
@@ -1031,7 +880,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1056, y: -125}
+    uvTransform: {x: -1247, y: 2121}
   - name: RealHair_Mullet
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1039,8 +888,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1161
-      y: 3882
+      x: 2625
+      y: 897
       width: 182
       height: 196
     spriteID: e0268f3e678866f42afa9e6f2e05a124
@@ -1053,7 +902,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -109, y: 3535}
+    uvTransform: {x: 1355, y: 550}
   - name: PortraitFrame02
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1061,8 +910,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 343
-      y: 3319
+      x: 3103
+      y: 1166
       width: 241
       height: 429
     spriteID: 267d37839948ae848a42319fa0854400
@@ -1075,7 +924,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -898, y: 3137}
+    uvTransform: {x: 1862, y: 984}
   - name: CorpseNose01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1083,8 +932,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1460
-      y: 3882
+      x: 2625
+      y: 1101
       width: 74
       height: 57
     spriteID: ce76603d249f18c4bbb901681d62cf78
@@ -1097,7 +946,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 538, y: 3351}
+    uvTransform: {x: 1703, y: 570}
   - name: CorpseMouth01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1105,10 +954,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1351
-      y: 3961
-      width: 120
-      height: 50
+      x: 3201
+      y: 1603
+      width: 133
+      height: 72
     spriteID: d8716ed7f94276748a92379d40a344f6
     internalID: 0
     spriteBone: []
@@ -1119,19 +968,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 448, y: 3486}
-  - name: recpetionBG01 copy
+    uvTransform: {x: 2306, y: 1125}
+  - name: facePart01
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 4
-      width: 1920
-      height: 1080
-    spriteID: aa436318e68476f43b04c86791fbe2cb
+      x: 3103
+      y: 1603
+      width: 90
+      height: 110
+    spriteID: 968ff538acac494468245a494f4a846c
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -1141,7 +990,139 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 2334, y: 1560}
+  - name: coffinBottom
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3846
+      y: 1436
+      width: 219
+      height: 301
+    spriteID: 13f404e0834b17f42a3a624db0a19e92
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2999, y: 1260}
+  - name: CorpseHead01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3846
+      y: 1166
+      width: 242
+      height: 233
+    spriteID: c707d9e4de7640742ba7155f6279b656
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3007, y: 743}
+  - name: coffin_Open
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 387
+      y: 1166
+      width: 346
+      height: 509
+    spriteID: c12f41174aebd004f922a19b7d265d03
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -460, y: 990}
+  - name: coffinClosed
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3860
+      y: 4
+      width: 219
+      height: 488
+    spriteID: f3e22458a22c26f4e8fa95c9515df1e0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3013, y: -172}
+  - name: redWalls01
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3378
+      y: 552
+      width: 375
+      height: 577
+    spriteID: 550c2ee17dd2b9142a3fe706472e1df5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1833, y: 49}
+  - name: redWalls02
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1166
+      width: 375
+      height: 577
+    spriteID: 83f7dfebcef2bf343b029176d5b20c5e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 663}
   platformSettings:
   - name: Default
     overridden: 1
@@ -1192,28 +1173,28 @@ ScriptedImporter:
     parentIndex: 1
     spriteID: ffc7dfbd946f7814eb678b34c18a247b
     layerID: 78
-    mosaicPosition: {x: 1826, y: 3198}
+    mosaicPosition: {x: 3021, y: 1445}
   - name: facePart03
     spriteName: facePart03
     isGroup: 0
     parentIndex: 1
     spriteID: 959b6be387a150f4f9b7034a5d0c623c
     layerID: 77
-    mosaicPosition: {x: 1842, y: 2607}
+    mosaicPosition: {x: 3021, y: 1527}
   - name: facePart02
     spriteName: facePart02
     isGroup: 0
     parentIndex: 1
     spriteID: b40827a0507664243a89bd8a28a8befe
     layerID: 76
-    mosaicPosition: {x: 1842, y: 2689}
+    mosaicPosition: {x: 3021, y: 1609}
   - name: facePart01
     spriteName: facePart01
     isGroup: 0
     parentIndex: 1
-    spriteID: c987725de6da7d045b02d911cbd84d47
-    layerID: 73
-    mosaicPosition: {x: 2213, y: 2772}
+    spriteID: 968ff538acac494468245a494f4a846c
+    layerID: 238
+    mosaicPosition: {x: 3103, y: 1603}
   - name: PartsTray
     spriteName: 
     isGroup: 1
@@ -1227,7 +1208,7 @@ ScriptedImporter:
     parentIndex: 6
     spriteID: 654dba60c0baae1498f2c057cd035ec8
     layerID: 49
-    mosaicPosition: {x: 2776, y: 4}
+    mosaicPosition: {x: 2822, y: 992}
   - name: Portrait
     spriteName: 
     isGroup: 1
@@ -1241,49 +1222,49 @@ ScriptedImporter:
     parentIndex: 8
     spriteID: c29631b72decc544cbe0554d0c69db93
     layerID: 204
-    mosaicPosition: {x: 1932, y: 3737}
+    mosaicPosition: {x: 3352, y: 1494}
   - name: RealHair_DreadLocks
     spriteName: RealHair_DreadLocks
     isGroup: 0
     parentIndex: 8
     spriteID: d7f0144cd810d8b4891c888e3cf1c82a
     layerID: 207
-    mosaicPosition: {x: 1932, y: 3495}
+    mosaicPosition: {x: 4, y: 1980}
   - name: RealHair_Spiky
     spriteName: RealHair_Spiky
     isGroup: 0
     parentIndex: 8
     spriteID: 959bebd5cb2f5794bb793308e17e78d9
     layerID: 217
-    mosaicPosition: {x: 1717, y: 2952}
+    mosaicPosition: {x: 4, y: 2222}
   - name: RealHair_Beehive
     spriteName: RealHair_Beehive
     isGroup: 0
     parentIndex: 8
     spriteID: 0180424333084e94baf034a9dd606527
     layerID: 225
-    mosaicPosition: {x: 2307, y: 222}
+    mosaicPosition: {x: 4, y: 2468}
   - name: RealHair_Mullet
     spriteName: RealHair_Mullet
     isGroup: 0
     parentIndex: 8
     spriteID: e0268f3e678866f42afa9e6f2e05a124
     layerID: 233
-    mosaicPosition: {x: 1161, y: 3882}
+    mosaicPosition: {x: 2625, y: 897}
   - name: PortraitFrame01
     spriteName: PortraitFrame01
     isGroup: 0
     parentIndex: 8
     spriteID: b82a2e532f2ebd84f8a5ec86e6da5b9e
     layerID: 97
-    mosaicPosition: {x: 1932, y: 3001}
+    mosaicPosition: {x: 1857, y: 897}
   - name: PortraitFrame02
     spriteName: PortraitFrame02
     isGroup: 0
     parentIndex: 8
     spriteID: 267d37839948ae848a42319fa0854400
     layerID: 237
-    mosaicPosition: {x: 343, y: 3319}
+    mosaicPosition: {x: 3103, y: 1166}
   - name: Coffin Bottom
     spriteName: 
     isGroup: 1
@@ -1295,9 +1276,9 @@ ScriptedImporter:
     spriteName: coffinBottom
     isGroup: 0
     parentIndex: 16
-    spriteID: 4e1ed90a59599fc4185b8a35d8ac4c89
-    layerID: 41
-    mosaicPosition: {x: 1932, y: 2463}
+    spriteID: 13f404e0834b17f42a3a624db0a19e92
+    layerID: 258
+    mosaicPosition: {x: 3846, y: 1436}
   - name: Corpse
     spriteName: 
     isGroup: 1
@@ -1311,105 +1292,105 @@ ScriptedImporter:
     parentIndex: 18
     spriteID: ce76603d249f18c4bbb901681d62cf78
     layerID: 189
-    mosaicPosition: {x: 1460, y: 3882}
+    mosaicPosition: {x: 2625, y: 1101}
   - name: CorpseEyes01
     spriteName: CorpseEyes01
     isGroup: 0
     parentIndex: 18
     spriteID: 793f67b407a32934cbc625976a16e0f6
     layerID: 94
-    mosaicPosition: {x: 1351, y: 4019}
+    mosaicPosition: {x: 3201, y: 1683}
   - name: CorpseMouth01
     spriteName: CorpseMouth01
     isGroup: 0
     parentIndex: 18
     spriteID: d8716ed7f94276748a92379d40a344f6
     layerID: 187
-    mosaicPosition: {x: 1351, y: 3961}
+    mosaicPosition: {x: 3201, y: 1603}
   - name: CorpseHair01
     spriteName: CorpseHair01
     isGroup: 0
     parentIndex: 18
     spriteID: 2d51a1df71ce04a499d0ccf8f8ca99be
     layerID: 117
-    mosaicPosition: {x: 1388, y: 2188}
+    mosaicPosition: {x: 1116, y: 1166}
   - name: CorpseHair02
     spriteName: CorpseHair02
     isGroup: 0
     parentIndex: 18
     spriteID: bbf56add962d048369c037cba5a7ef00
     layerID: 112
-    mosaicPosition: {x: 605, y: 3297}
+    mosaicPosition: {x: 2822, y: 552}
   - name: CorpseHair03
     spriteName: CorpseHair03
     isGroup: 0
     parentIndex: 18
     spriteID: 9f9a0d09162d64f518c330fa356456c7
     layerID: 136
-    mosaicPosition: {x: 605, y: 3737}
+    mosaicPosition: {x: 1937, y: 1166}
   - name: CorpseHair04
     spriteName: CorpseHair04
     isGroup: 0
     parentIndex: 18
     spriteID: cbdd664104db945228b426e6c667ad79
     layerID: 143
-    mosaicPosition: {x: 1932, y: 2772}
+    mosaicPosition: {x: 4, y: 1751}
   - name: CorpseHair05
     spriteName: CorpseHair05
     isGroup: 0
     parentIndex: 18
     spriteID: 853fc1ada4b6c40c0b090b535e197179
     layerID: 150
-    mosaicPosition: {x: 1932, y: 4}
+    mosaicPosition: {x: 741, y: 1166}
   - name: CorpseHair06
     spriteName: CorpseHair06
     isGroup: 0
     parentIndex: 18
     spriteID: 9b1f2fee230254e8c8c937f2329479eb
     layerID: 152
-    mosaicPosition: {x: 1932, y: 448}
+    mosaicPosition: {x: 1566, y: 1166}
   - name: CorpseHair07
     spriteName: CorpseHair07
     isGroup: 0
     parentIndex: 18
     spriteID: 79980bf828b9a43b3abd2c240cee1131
     layerID: 154
-    mosaicPosition: {x: 1932, y: 1324}
+    mosaicPosition: {x: 2703, y: 1445}
   - name: CorpseHair08
     spriteName: CorpseHair08
     isGroup: 0
     parentIndex: 18
     spriteID: 7ad0af4685aff4eb59929ba0f72280cc
     layerID: 159
-    mosaicPosition: {x: 4, y: 3319}
+    mosaicPosition: {x: 3761, y: 552}
   - name: CorpseHair09
     spriteName: CorpseHair09
     isGroup: 0
     parentIndex: 18
     spriteID: 9a867331c22fc46f193cea63fd0a9f43
     layerID: 163
-    mosaicPosition: {x: 4, y: 3814}
+    mosaicPosition: {x: 1937, y: 1479}
   - name: CorpseHair10
     spriteName: CorpseHair10
     isGroup: 0
     parentIndex: 18
     spriteID: 9b2034784020e4279838a03b52af55c6
     layerID: 175
-    mosaicPosition: {x: 1317, y: 2952}
+    mosaicPosition: {x: 2703, y: 1166}
   - name: CorpseHead01
     spriteName: CorpseHead01
     isGroup: 0
     parentIndex: 18
-    spriteID: 884ffe586753f184a863f203a48aa5cb
-    layerID: 79
-    mosaicPosition: {x: 1932, y: 3254}
+    spriteID: c707d9e4de7640742ba7155f6279b656
+    layerID: 256
+    mosaicPosition: {x: 3846, y: 1166}
   - name: CorpseEars01
     spriteName: CorpseEars01
     isGroup: 0
     parentIndex: 18
     spriteID: c8bb460bb58847442a1add9cf9302738
     layerID: 95
-    mosaicPosition: {x: 1932, y: 3988}
+    mosaicPosition: {x: 3761, y: 1047}
   - name: Coffin
     spriteName: 
     isGroup: 1
@@ -1421,16 +1402,16 @@ ScriptedImporter:
     spriteName: coffin_Open
     isGroup: 0
     parentIndex: 34
-    spriteID: 6c5ad43b79671b94b8103696f8f1f824
-    layerID: 59
-    mosaicPosition: {x: 4, y: 2802}
+    spriteID: c12f41174aebd004f922a19b7d265d03
+    layerID: 260
+    mosaicPosition: {x: 387, y: 1166}
   - name: coffinClosed
     spriteName: coffinClosed
     isGroup: 0
     parentIndex: 34
-    spriteID: 484a8491ec219c74381b4fe2fa61b396
-    layerID: 84
-    mosaicPosition: {x: 358, y: 2802}
+    spriteID: f3e22458a22c26f4e8fa95c9515df1e0
+    layerID: 262
+    mosaicPosition: {x: 3860, y: 4}
   - name: Table
     spriteName: 
     isGroup: 1
@@ -1444,7 +1425,7 @@ ScriptedImporter:
     parentIndex: 37
     spriteID: 083e8947c5993b04a99cc8e46d5df9f2
     layerID: 19
-    mosaicPosition: {x: 1932, y: 862}
+    mosaicPosition: {x: 2409, y: 1166}
   - name: ConveyerBelt
     spriteName: 
     isGroup: 1
@@ -1458,7 +1439,7 @@ ScriptedImporter:
     parentIndex: 39
     spriteID: 2fdc7330cb7caf54281c5c68ea0f978f
     layerID: 18
-    mosaicPosition: {x: 605, y: 2188}
+    mosaicPosition: {x: 605, y: 552}
   - name: Nonsense
     spriteName: 
     isGroup: 1
@@ -1472,21 +1453,21 @@ ScriptedImporter:
     parentIndex: 41
     spriteID: 64d7b552bcdbb3b43ae15de2ea87aafc
     layerID: 69
-    mosaicPosition: {x: 2307, y: 4}
+    mosaicPosition: {x: 1388, y: 897}
   - name: BGCabinetsLeft
     spriteName: BGCabinetsLeft
     isGroup: 0
     parentIndex: 41
     spriteID: 724187841b7fc364fb2e29cd42d90b6d
     layerID: 72
-    mosaicPosition: {x: 1327, y: 2607}
+    mosaicPosition: {x: 2110, y: 897}
   - name: BGCounterTop
     spriteName: BGCounterTop
     isGroup: 0
     parentIndex: 41
     spriteID: ba6ba534860b216438d3365895ad8e5b
     layerID: 66
-    mosaicPosition: {x: 4, y: 2188}
+    mosaicPosition: {x: 4, y: 552}
   - name: Wall
     spriteName: 
     isGroup: 1
@@ -1500,28 +1481,28 @@ ScriptedImporter:
     parentIndex: 45
     spriteID: 82884ba1ee2bc43489cb905e3bf7e27a
     layerID: 106
-    mosaicPosition: {x: 605, y: 2952}
+    mosaicPosition: {x: 2110, y: 552}
   - name: middleWall01
     spriteName: middleWall01
     isGroup: 0
     parentIndex: 45
     spriteID: dd7ac37ce8151594288570c5e989c1ec
     layerID: 53
-    mosaicPosition: {x: 605, y: 2607}
+    mosaicPosition: {x: 1388, y: 552}
   - name: redWalls01
     spriteName: redWalls01
     isGroup: 0
     parentIndex: 45
-    spriteID: 6c6dfab0822f7f74a83178dac2ec8c47
-    layerID: 60
-    mosaicPosition: {x: 1161, y: 3297}
+    spriteID: 550c2ee17dd2b9142a3fe706472e1df5
+    layerID: 240
+    mosaicPosition: {x: 3378, y: 552}
   - name: redWalls02
     spriteName: redWalls02
     isGroup: 0
     parentIndex: 45
-    spriteID: c7f7a63e066996249a1c0c14a93eed6f
-    layerID: 62
-    mosaicPosition: {x: 1544, y: 3297}
+    spriteID: 83f7dfebcef2bf343b029176d5b20c5e
+    layerID: 239
+    mosaicPosition: {x: 4, y: 1166}
   - name: Family
     spriteName: 
     isGroup: 1
@@ -1535,21 +1516,21 @@ ScriptedImporter:
     parentIndex: 50
     spriteID: 84995fa8253717b458340f5327320188
     layerID: 105
-    mosaicPosition: {x: 1351, y: 3882}
+    mosaicPosition: {x: 2518, y: 1628}
   - name: familyFace01
     spriteName: familyFace01
     isGroup: 0
     parentIndex: 50
     spriteID: efca2f9294ff9ab49b211203a8dc09e0
     layerID: 104
-    mosaicPosition: {x: 1717, y: 3198}
+    mosaicPosition: {x: 2409, y: 1628}
   - name: familyTorso01
     spriteName: familyTorso01
     isGroup: 0
     parentIndex: 50
     spriteID: a551d275d703cea4fa06f1418f170512
     layerID: 101
-    mosaicPosition: {x: 1932, y: 1595}
+    mosaicPosition: {x: 3352, y: 1166}
   - name: Curtains
     spriteName: 
     isGroup: 1
@@ -1563,7 +1544,7 @@ ScriptedImporter:
     parentIndex: 54
     spriteID: f57ac1a61ee69db49a73542bb78f3d33
     layerID: 91
-    mosaicPosition: {x: 1327, y: 2825}
+    mosaicPosition: {x: 605, y: 971}
   - name: Right
     spriteName: 
     isGroup: 1
@@ -1577,7 +1558,7 @@ ScriptedImporter:
     parentIndex: 56
     spriteID: 9bbdcca33ce83224d8e5d3445ebbeff5
     layerID: 39
-    mosaicPosition: {x: 1932, y: 1923}
+    mosaicPosition: {x: 3582, y: 1166}
   - name: Left
     spriteName: 
     isGroup: 1
@@ -1591,7 +1572,7 @@ ScriptedImporter:
     parentIndex: 58
     spriteID: 7ca0231bbc1c84f47947bcbe73bb5878
     layerID: 25
-    mosaicPosition: {x: 1932, y: 2193}
+    mosaicPosition: {x: 3582, y: 1436}
   - name: BG
     spriteName: 
     isGroup: 1
@@ -1599,27 +1580,20 @@ ScriptedImporter:
     spriteID: 00000000000000000000000000000000
     layerID: 28
     mosaicPosition: {x: 0, y: 0}
-  - name: recpetionBG01 copy
-    spriteName: recpetionBG01 copy
-    isGroup: 0
-    parentIndex: 60
-    spriteID: aa436318e68476f43b04c86791fbe2cb
-    layerID: 180
-    mosaicPosition: {x: 4, y: 4}
   - name: recpetionBG01
     spriteName: recpetionBG01
     isGroup: 0
     parentIndex: 60
     spriteID: 1ad78e7f9a1399c498dc533d4929cf42
     layerID: 14
-    mosaicPosition: {x: 4, y: 1092}
+    mosaicPosition: {x: 4, y: 4}
   - name: morgueBG01
     spriteName: morgueBG01
     isGroup: 0
     parentIndex: 60
     spriteID: d51eec97bd58b2c41b384a9b7c9c263e
     layerID: 13
-    mosaicPosition: {x: 4, y: 1640}
+    mosaicPosition: {x: 1932, y: 4}
   characterData:
     bones: []
     parts: []
