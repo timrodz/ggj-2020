@@ -19,7 +19,7 @@ public class BodyPartItemObject : MonoBehaviour {
 		sr.sprite = item.Sprite;
 		sr.color = item.Colour == BodyPartColour.Yellow ? Color.yellow : brown;
 		transform.localPosition = item.Offset;
-		Debug.LogFormat("Position: {0}, offset: {1}", transform.localPosition, item.Offset);
+		Debug.LogFormat ("Position: {0}, offset: {1}", transform.localPosition, item.Offset);
 	}
 
 	public void InitImage (BodyPartItem item) {
