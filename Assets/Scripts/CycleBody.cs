@@ -13,6 +13,7 @@ public class CycleBody : MonoBehaviour {
     public GameObject curtains;
     public GameObject coffinRotation;
     public GameObject closedCoffin;
+    public GameObject openCloseSendCoffin;
 
     public Button button1;
     public Button button2;
@@ -41,7 +42,14 @@ public class CycleBody : MonoBehaviour {
     //show the tray
 
     //Use this to assign the chosen part to the corpse
-
+    private void OnEnable() {
+		PuzzleTrayController.OnScoreCalculated += OnScore;
+	}
+    
+    private void OnScore(int score) {
+        StartCoroutine (CarryOutBodySwapOut ());
+    }
+    
     private void Start() {
 		SetButtonsInteractable(false);
 		StartCoroutine(CarryBodySwapIn());
@@ -64,34 +72,42 @@ public class CycleBody : MonoBehaviour {
         Debug.LogFormat ("Selected body part: {0}", buttonNumber);
         SetButtonsInteractable (false);
         OnClick?.Invoke (buttonNumber);
-        StartCoroutine (CarryOutBodySwapOut ());
     }
 
     IEnumerator CarryOutBodySwapOut () {
         OnCarryOutStart?.Invoke ();
 
-        // TODO: Play animation
+        // TODO: Play score animation
 
-        //yield return new WaitForSeconds (1f);
-
-        tray.gameObject.GetComponent<Animator> ()?.SetTrigger ("Hide");
-        portrait.gameObject.GetComponent<Animator> ()?.SetTrigger ("Hide");
+        //Hide the tray and portrait
+        tray.gameObject.GetComponent<Animator>()?.SetTrigger("Hide");
+        portrait.gameObject.GetComponent<Animator>()?.SetTrigger("Hide");
+        //Wait
+        yield return new WaitForSeconds(1.0f);
+        //Close the lid and open the curtains
+        openCloseSendCoffin.gameObject.GetComponent<Animator>()?.SetTrigger("Close_Coffin");
         // curtains.gameObject.GetComponent<Animator> ()?.SetTrigger ("Open");
+        //Wait
+        yield return new WaitForSeconds(1.0f);
+        //Send off the Coffin
+        openCloseSendCoffin.gameObject.GetComponent<Animator>()?.SetTrigger("Send_Coffin");
+        //Wait
+        yield return new WaitForSeconds(1.0f);
+        //Bring in a new coffin
         coffinRotation.gameObject.GetComponent<Animator> ()?.SetTrigger ("Empty Table");
-
-        yield return new WaitForSeconds (1.5f);
-
-        //Replace the animated coffin with the closed coffin
-        //closedCoffin.SetActive (true);
-
-        tray.gameObject.GetComponent<Animator> ()?.SetTrigger ("Show");
-        portrait.gameObject.GetComponent<Animator> ()?.SetTrigger ("Show");
         // curtains.gameObject.GetComponent<Animator> ()?.SetTrigger ("Close");
-        coffinRotation.gameObject.GetComponent<Animator> ()?.SetTrigger ("Next Coffin");
-
+        coffinRotation.gameObject.GetComponent<Animator>()?.SetTrigger("Next Coffin");
         yield return new WaitForSeconds (1.0f);
+        //wait
+        yield return new WaitForSeconds (1.0f);
+        //Show the tray and portrait
+        tray.gameObject.GetComponent<Animator>()?.SetTrigger("Show");
+        portrait.gameObject.GetComponent<Animator>()?.SetTrigger("Show");
+        //Open the coffin
+        openCloseSendCoffin.gameObject.GetComponent<Animator>()?.SetTrigger("Open_Coffin");
 
-        SetButtonsInteractable (true);
+        //In able the buttons
+        SetButtonsInteractable(true);
 
         OnCarryOutFinish?.Invoke ();
     }
