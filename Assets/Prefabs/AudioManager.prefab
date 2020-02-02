@@ -47,27 +47,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FX: {fileID: 20287632976401093}
   audioFiles:
-  - Clip: {fileID: 8300000, guid: a62b14d66ea284ca9b492f590306a3fe, type: 3}
+  - Clip: {fileID: 8300000, guid: c6606e6e5304440f9ad8b3c1e56adef9, type: 3}
     id: belt
   - Clip: {fileID: 8300000, guid: 8235ee586a7d94fa8a256c5bf0803432, type: 3}
     id: squeak
-  - Clip: {fileID: 8300000, guid: 8651fe9b757cb4610a65421507b05b8e, type: 3}
-    id: cheer
+  - Clip: {fileID: 8300000, guid: d19463e39b85b467f98b42c8dddec2ee, type: 3}
+    id: cheering
   - Clip: {fileID: 8300000, guid: c4ffbf25016574fed8a80f36a1748a2d, type: 3}
     id: creak
-  - Clip: {fileID: 8300000, guid: a05a5fc33e548454fb759485495f1760, type: 3}
+  - Clip: {fileID: 8300000, guid: a2f50592799de4f50a3ce024fa86056c, type: 3}
     id: squelch
   - Clip: {fileID: 8300000, guid: a5cb2f79d7dcd4e0694257df730e627e, type: 3}
     id: vomit
-  - Clip: {fileID: 8300000, guid: 48d83e8df4730934a98dea71e8368bfc, type: 3}
+  - Clip: {fileID: 8300000, guid: 5a011e95da75f4fd499e058fd17c65f6, type: 3}
     id: applause
-  - Clip: {fileID: 8300000, guid: e9c27e39db81d874db3169ee8e0b84a7, type: 3}
-    id: girl_scream
   - Clip: {fileID: 8300000, guid: 90e87ea74fbc61b4d95d6c8bb01096b9, type: 3}
     id: man_scream
   - Clip: {fileID: 8300000, guid: 218f91be0d8273645b56571879ab7274, type: 3}
     id: woman_scream
-  - Clip: {fileID: 8300000, guid: 01a08f3b3c93c5f45845961437a140a3, type: 3}
+  - Clip: {fileID: 8300000, guid: 5c20bcc7742064caca6b812f47a8863c, type: 3}
     id: mech_rotation
   - Clip: {fileID: 8300000, guid: 0982715147d3fe249969b6df3ecdcc26, type: 3}
     id: man_cry
